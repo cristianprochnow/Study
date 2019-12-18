@@ -1,0 +1,1 @@
+select count(cd_logradouro) as qtd_logradouro from logradouro;

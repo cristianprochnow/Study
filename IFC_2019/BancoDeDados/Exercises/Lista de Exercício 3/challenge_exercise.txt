@@ -1,0 +1,1 @@
+Crie uma consulta que retorne a média dos preços da embalagem dos produtos comprados para o usuário que mora no estado de Santa Catarina

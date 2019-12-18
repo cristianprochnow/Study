@@ -1,0 +1,1 @@
+select round(avg(preco_unit), 2) as media_precos from produto;

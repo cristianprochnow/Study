@@ -1,0 +1,1 @@
+select count(cpf) as qtd_usuarios from cad_usuario;

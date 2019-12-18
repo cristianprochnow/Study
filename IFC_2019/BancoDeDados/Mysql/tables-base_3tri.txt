@@ -1,0 +1,139 @@
+TABELAS [ dataBase_3trimestre ]
+
+
+
+bairros
+
++------------------+--------------+------+-----+---------+----------------+
+| Field            | Type         | Null | Key | Default | Extra          |
++------------------+--------------+------+-----+---------+----------------+
+| cd_bairro        | int(8)       | NO   | PRI | NULL    | auto_increment |
+| cidade_cd_cidade | int(5)       | NO   | MUL | NULL    |                |
+| ds_bairro_nome   | varchar(250) | NO   |     | NULL    |                |
++------------------+--------------+------+-----+---------+----------------+
+
+
+cad_usuario
+
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| cpf               | varchar(11)  | NO   | PRI | NULL    |       |
+| rg                | varchar(10)  | YES  |     | NULL    |       |
+| nome              | varchar(60)  | NO   | MUL | NULL    |       |
+| email             | varchar(100) | YES  |     | NULL    |       |
+| tel               | int(10)      | YES  |     | NULL    |       |
+| cel               | int(10)      | YES  |     | NULL    |       |
+| log_cd_logradouro | int(11)      | YES  | MUL | NULL    |       |
+| pwd               | varchar(45)  | YES  |     | NULL    |       |
+| tipuser_cod       | int(11)      | NO   | MUL | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+
+
+cidades
+
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| uf_cd_uf       | int(5)       | NO   | MUL | NULL    |       |
+| cd_cidade      | int(5)       | NO   | PRI | NULL    |       |
+| ds_cidade_nome | varchar(100) | NO   |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+
+
+embalagem
+
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| cod_embalagem | int(5)      | NO   | PRI | NULL    |       |
+| decricao_emb  | varchar(45) | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+
+
+itemped
+
++------------------+---------+------+-----+---------+----------------+
+| Field            | Type    | Null | Key | Default | Extra          |
++------------------+---------+------+-----+---------+----------------+
+| cod_itemp        | int(11) | NO   | PRI | NULL    | auto_increment |
+| qtditem          | int(11) | YES  |     | NULL    |                |
+| ped_codpedidos   | int(11) | NO   | MUL | NULL    |                |
+| prod_cod_produto | int(5)  | NO   | MUL | NULL    |                |
+| estado_prod      | char(3) | YES  |     | NULL    |                |
++------------------+---------+------+-----+---------+----------------+
+
+
+logradouro
+
++--------------------+--------------+------+-----+---------+----------------+
+| Field              | Type         | Null | Key | Default | Extra          |
++--------------------+--------------+------+-----+---------+----------------+
+| cd_logradouro      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| bairros_cd_bairro  | int(8)       | NO   | MUL | NULL    |                |
+| cd_tipo_logradouro | int(11)      | NO   |     | NULL    |                |
+| ds_logradouro_nome | varchar(300) | NO   |     | NULL    |                |
+| cep                | int(8)       | NO   |     | NULL    |                |
+| log_cd_tip_log     | int(11)      | NO   | MUL | NULL    |                |
++--------------------+--------------+------+-----+---------+----------------+
+
+
+pedidos
+
++-----------------+-------------+------+-----+---------+----------------+
+| Field           | Type        | Null | Key | Default | Extra          |
++-----------------+-------------+------+-----+---------+----------------+
+| cod_pedido      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| cad_usuario_cpf | varchar(11) | YES  | MUL | NULL    |                |
+| dtped           | date        | YES  |     | NULL    |                |
+| faturado        | char(3)     | YES  |     | NULL    |                |
+| naofaturado     | char(3)     | YES  |     | NULL    |                |
+| dtentrega       | date        | YES  |     | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+
+
+produto
+
++-------------------+---------------+------+-----+---------+----------------+
+| Field             | Type          | Null | Key | Default | Extra          |
++-------------------+---------------+------+-----+---------+----------------+
+| cod_produto       | int(5)        | NO   | PRI | NULL    | auto_increment |
+| descricao         | varchar(60)   | NO   |     | NULL    |                |
+| preco_unit        | decimal(10,2) | YES  |     | NULL    |                |
+| preco_emb         | decimal(10,2) | YES  |     | NULL    |                |
+| qtd_emb           | int(5)        | YES  |     | NULL    |                |
+| qtd_prod_est      | int(5)        | NO   |     | NULL    |                |
+| emb_cod_embalagem | int(5)        | NO   | MUL | NULL    |                |
++-------------------+---------------+------+-----+---------+----------------+
+
+
+tipo_logradouro
+
++--------------------+-------------+------+-----+---------+----------------+
+| Field              | Type        | Null | Key | Default | Extra          |
++--------------------+-------------+------+-----+---------+----------------+
+| cd_tipo_logradouro | int(11)     | NO   | PRI | NULL    | auto_increment |
+| desc_tip_log       | varchar(50) | YES  |     | NULL    |                |
++--------------------+-------------+------+-----+---------+----------------+
+
+
+tipo_usuario
+
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| cod_tip_user   | int(11)      | NO   | PRI | NULL    | auto_increment |
+| descricao_tipo | varchar(120) | NO   |     | NULL    |                |
+| ativo          | tinyint(1)   | NO   |     | 0       |                |
++----------------+--------------+------+-----+---------+----------------+
+
+
+uf
+
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| cd_uf       | int(3)      | NO   | PRI | NULL    | auto_increment |
+| ds_uf_sigla | char(2)     | NO   |     | NULL    |                |
+| ds_uf_nome  | varchar(80) | NO   | MUL | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
