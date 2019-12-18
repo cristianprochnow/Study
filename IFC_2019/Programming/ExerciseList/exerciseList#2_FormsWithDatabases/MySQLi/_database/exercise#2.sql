@@ -1,0 +1,7 @@
+CREATE DATABASE list1_exercise2;
+
+CREATE TABLE teste1 (
+    testeID INT(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(25),
+    idade INT(4)
+);

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* ____ General formatting ____ */
+
+body {
+    background-color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ____ main-content formatting ____ */
+
+.main-content {
+    display: block;
+    width: 300px;
+    height: 180px;
+    margin: 15% auto 5% auto;
+}
+
+.main-content-answer {
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin: 15% auto 5% auto;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #353535;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.main-content-answer h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #353535;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.main-content-answer p {
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #353535;
+}
+
+.main-content-answer p span {
+    color: #e15a00;
+}
+
+
+/*  ____ form1 formatting ____  */
+
+#form1 {
+    display: block;
+    width: 300px;
+    height: 110px;
+    padding: 40px 0 0 0;
+}
+
+
+/* ____ model-car-box formatting ____ */
+
+#model-car-group {
+    width: 300px;
+    height: 20px;
+}
+
+#model-car-group label {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    color: #353535;
+}
+
+#select-box-car-type {
+    background-color: #f1f1f1;
+    border: transparent;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+    font-family: 'Roboto', sans-serif;
+    color: #e15a00;
+    text-indent: 3px;
+}
+
+#select-box-car-type:hover {
+    background-color: #dddddd;
+}
+
+
+/* ____ color-car-box formatting ____ */
+
+#color-car-group {
+    width: 300px;
+    height: 20px;
+    margin: 10px 0 0 0;
+}
+
+#color-car-group label {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    color: #353535;
+}
+
+#select-box-car-color {
+    background-color: #f1f1f1;
+    border: transparent;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+    font-family: 'Roboto', sans-serif;
+    color: #ff7111;
+    text-indent: 3px;
+}
+
+#select-box-car-color:hover {
+    background-color: #dddddd;
+}
+
+
+/* ____ submit-button formatting ____ */
+
+#div-form1-submit-button {
+    width: 120px;
+    height: 30px;
+    margin: 40px auto 0 auto;
+}
+
+#form1-submit-button {
+    width: 100%;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e15a00;
+    color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+#form1-submit-button:hover {
+    background-color: #ff7111;
+}

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* ____ General formatting ____ */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eaeaea;
+}
+
+
+/* ____ main-content formatting ____ */
+
+#main-content {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 100px auto 0 auto;
+}
+
+
+/* ____ main-content-title formatting ____ */
+
+.main-content-title {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content-title h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 0 0 0;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+
+/* ____ form1 formatting ____ */
+
+#form1-box {
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#form1 {
+    display: block;
+    height: 150px;
+    width: 100%;
+}
+
+.color_box {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.colors-input {
+    background-color: #f2f2f2;
+    border: transparent;
+    border-radius: 2px;
+    transition: background-color 0.5s;
+}
+
+.colors-input:hover {
+    background-color: #b3b3b3;
+}
+
+#R_box_p {
+    padding: 25px 0 0 0;
+}
+
+
+/* ____ colors-code and colors-box formatting ____ */
+
+.colors-code {
+    display: block;
+    width: 150px;
+    height: 240px;
+    margin: 0;
+    float: left;
+}
+
+.colors-code p {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    text-indent: 30px;
+}
+
+#RP {
+    padding: 40px 0 0 0;
+}
+
+
+/* ____ submit-button formatting ____ */
+
+#submit-button-box {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin: 10px auto 0 auto;
+}
+
+#submit-button {
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #FF452F;
+    transition: background-color 0.5s;
+}
+
+#submit-button:hover {
+    background-color: #E8501E;
+}
