@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="PT-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Site Artech Ar Condicionados">
+<meta name="keywords" content="Ar-condiconado,Refrigera&#195;&#167;&#195;&#163;o, Inverter, Janela, Split, Aquecedores">
+<meta name="author" content="Artech">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artech Ar Condicionados</title>
+
+<link rel="stylesheet" type="text/css" href="site.css">
+<script src="site.js"></script>
+
+
+<body>
+	<header>
+	<img src="imagens/logo.png" alt="Logo da Artech Ar Condicionados">
+		<h1>Artech Ar Condicionados</h1>
+
+		<nav>
+			   <a href="index.html"><div class="opcao">Inicio</div></a> <a
+			href="produtos.html"><div class="opcao">Produtos</div></a>
+		<a href="faleconosco.html"><div class="opcao">Fale
+				Conosco</div></a>
+		</nav>
+
+	</header>
+	<section>
+		   <div id="topo" align="center">
+				<img alt="Imagem de um ar condicionado" src="imagens/arcondicionado.png" class="topo2">
+			</div>
+
+		<h2>Fale Conosco!</h2>
+		<p>Ficou com alguma d&#195;&#186;vida? Preencha este fomul&#195;&#161;rio e entraremos em contato!</p>
+
+		<form name="frmfaleconosco" method="post" action="#" onsubmit="return validaFaleConosco()">
+
+			<fieldset class="faleconosco">
+				<legend>Dados Pessoais:</legend>
+				
+				<label for="nome">Nome:</label>
+				<input type="text" name="txtnome" id="nome">
+
+				<label for="fone">Telefone:</label> 
+				<input type="text" name="txtfone" id="fone">
+
+				<label for="email">Email:</label>
+				<input type="email" name="txtemail" id="email">
+				
+				<label for="data_nascimento">Data Nascimento:</label>
+				<input type="date" name="txtdata_nascimento" id="data_nascimento">
+
+ 	    	</fieldset>
+
+			<fieldset class="faleconosco">
+
+				<legend>Motivo do Contato:</legend>
+				<label for="motivo">Motivo:</label> 
+
+				<select name="selmotivo" id="motivo" onchange="verificaMotivo(this.value)">
+					<option value=" ">Escolha</option>
+					<option value="RE">Reclama&#195;&#167;&#195;&#163;o</option>
+					<option value="SU">Sugest&#195;&#163;o</option>
+					<option value="PR">Informa&#195;&#167;&#195;&#163;o sobre produto</option>
+				</select> 
+
+				<div id="opcaoProduto"></div>
+				<label for="comentario">Coment&#195;&#161;rio:</label>
+				<textarea name="txacomentario" id="comentario"></textarea>
+				<button type="reset" onclick="verificaMotivo(null)">Limpar</button><button type="submit">Enviar</button>
+			
+						
+			</fieldset>
+		
+		</form>
+
+	</section>
+	<footer>Copyright &copy; Artech Ar Condicionados 2019 </footer>
+
+</body>
+</html>

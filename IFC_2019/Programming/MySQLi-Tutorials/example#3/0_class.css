@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.texto {
+    font: 22px "Trebuchet MS";
+    text-decoration: none;
+    color: #000000
+}
+
+.texto_peq {
+    font: 20px "Trebuchet MS";
+    text-decoration: none;
+    color: #000000
+}
+
+.titulos {
+    font: bold 24px "Trebuchet MS";
+    text-decoration: none;
+    text-align: center;
+    color: #000000
+}
+
+.form_campos {
+    background-color: #FFFFFF;
+    font: 20px "Trebuchet MS";
+    border-style: groove
+}
+
+.form_botao {
+    background-color: #CCCCCC;
+    font: 20px "Trebuchet MS";
+    border-style: outset;
+}
+
+.div_botao {
+    text-align: center;
+}
+
+.home_link {
+    font: bold 20px "Trebuchet MS";
+    text-align: center;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin: 0 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font: 20px "Trebuchet MS";
+    border-collapse: collapse;
+    width: 100;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

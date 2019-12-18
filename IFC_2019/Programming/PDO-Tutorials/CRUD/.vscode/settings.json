@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 30,
+            "database": "pdo_CRUD_examples",
+            "dialect": "MySQL",
+            "name": "PDO-CRUD_Examples",
+            "password": "root",
+            "port": 3306,
+            "server": "127.0.0.1",
+            "username": "root"
+        }
+    ]
+}
