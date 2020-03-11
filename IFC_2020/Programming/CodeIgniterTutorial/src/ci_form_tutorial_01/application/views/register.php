@@ -64,7 +64,7 @@
 					<div class="form-group custom-bottom-margin">
 						<label class="control-label col-sm-4 text-right" for="email">Email</label>
 						<div class="col-sm-5">
-							<input type="email" name="email" class="formcontrol" value="<?php echo set_value('email');?>" placeholder="Enter email" id="email">
+							<input type="email" name="email" class="form-control" value="<?php echo set_value('email');?>" placeholder="Enter email" id="email">
 						</div>
 					</div>
 					<div class="form-group custom-bottom-margin">
@@ -89,7 +89,7 @@
 						<label class="control-label col-sm-4 text-right"
 						for="phone">Phone</label>
 						<div class="col-sm-5">
-							<input type="text" name="phone" class="formcontrol"
+							<input type="text" name="phone" class="form-control"
 							value="<?php echo set_value('phone');?>" placeholder="Enter phone"
 							id="phone">
 						</div>
