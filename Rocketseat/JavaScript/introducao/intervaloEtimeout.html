@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+        
+            // intervalo e timeOut
+
+
+            function exibeHello() {
+
+                console.log('Hello, World!');
+
+            }
+
+            /*
+                intervalo é usado quando deseja-se executar 
+                uma função várias vezes seguidas durante 
+                um determinado período de tempo, de intervalo 
+                a intervalo
+            */
+            setInterval(exibeHello, 1000);
+            /*
+                irá executar a função inúmeras vezes, sem um 
+                limite, de 1 em 1 segundo (1000 milisegundos)
+            */
+
+            setInterval(exibeHello(), 1000);
+            /*
+                neste exemplo, a função só será executada uma 
+                única vez, tendo um delay de 1 segundo. Isso 
+                ocorre devido ao uso de "()". Quando deseja-se 
+                executar inúmeras vezes de forma repetitiva, 
+                apenas se referencia a função, sem usar os 
+                "()", mas quando deseja-se executar apenas uma 
+                vez, então usa-se "()". É tipo como se no  
+                primeiro exemplo, a função fosse uma pessoa 
+                que seria chamada a cada um segundo para 
+                realizar algum ato que não seja do cargo dela, como ajudar alguém que está com alguma dúvida,
+                por exemplo. Já no segundo exemplo, essa 
+                pessoa já seria do cargo, ejá estaria naquele 
+                local, ou seja, seria necessário ela apenas 
+                realizar uma vez quando mandada
+            */
+
+            setTimeout(exibeHello, 5000);
+            /*
+                já nesse caso, a função será executada depois 
+                que 5 segundos se passarem. Ao contrário 
+                de setInterval(), esta função não repete o que 
+                está sendo referenciado dentro dela. Seu papel 
+                é executar, com delay (determinado pelo tempo 
+                colocado como parâmetro) o que lhe está sendo referenciado
+            */
+            /*
+                se usar "()", o delay não funciona, seguindo o mesmo esquema dos exemplos anteriores
+            */
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+        
+            function soma(firstNumber, secondNumber) {
+
+                /*
+                    mesmo que esta variável já esteja declarada 
+                    dentro da função, não é possível usar ela sem 
+                    declaração fora da função, pois já que ela está 
+                    dentro do procedimento, sua existência fica 
+                    restringida ao corpo da função, é como se fosse 
+                    algo totalmente abstrato. Por isso, que para usá-la 
+                    fora, tem que declará-la como variável, já que dentro 
+                    desta função sua declaração está como "var"
+                */
+                var resultado = firstNumber + secondNumber;
+
+                return resultado;
+
+            }
+
+            var resultado = soma(1, 2);
+
+            console.log(resultado);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+        
+            // for, while
+
+            /*
+                o FOR é mais recomendado usar quando sabe-se 
+                o intervalo que está sendo testado, ou seja, 
+                quando há uma array, por exemplo, e você 
+                sabe a quantia de itens dentro dela, assim 
+                é possível estabelecer um início de percurso 
+                e um fim, já que o tamanho já sabe-se
+            */
+            for (var contador = 0; contador <= 100; contador++) {
+
+                console.log(contador);
+
+            }
+
+
+            /*
+                já o WHILE, é recomendado o uso quando não 
+                se sabe o limite do que está sendo abrangido. 
+                Como por exemplo numa array imensa vinda 
+                diretamente de um banco de dados repleto 
+                de informações, e o foco principal é printar 
+                todas essas informações na tela. O fim da array 
+                não se sabe, por isso, nós damos um ponto de 
+                partida para o WHILE, e assim ele vai percorrer 
+                a lista toda, independente do tamanho, sem problema algum
+            */
+            var contador = 0;
+
+
+            while (contador <= 100) {
+
+                console.log(contador);
+
+                contador++;
+                
+            }
+
+        </script>
+    </body>
+</html>

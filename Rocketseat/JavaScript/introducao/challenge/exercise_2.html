@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" type="image/x-icon" href="../../../icons/js-icon.png" />
+
+        <title>Desafio - 2º Exercício</title>
+    </head>
+    
+    <body>
+        <script>
+        
+            // questões em docs/exercise-list.pdf
+
+
+            function numerosParesNoIntervalo(x, y) {
+
+                // array que guardará os números pares
+                var numerosPares = [];
+                /*
+                    contador que servirá como parâmetro na 
+                    atribuição de valores da array "numerosPares"
+                */
+                var contadorSecundario = 0;
+
+
+                for (var contador = x; contador <= y; contador++) {
+
+
+                    // se o número for par
+                    if (contador % 2 == 0) {
+
+                        /*
+                            nos espaços determinados pelo valor de 
+                            contadorSecundario, a array vai acumulando 
+                            os números que forem pares
+                        */
+                        /* numerosPares[contadorSecundario] = contador; */
+                        // função push() vai empurrar o valor para a array
+                        numerosPares.push(contador);
+
+                        /*
+                            a cada número par, a variável contadorSecundario 
+                            vai acrescentando uma unidade, fazendo assim com 
+                            que nenhum espaço da array seja sobrescrito
+                        */
+                        contadorSecundario += 1;
+
+                    }
+
+                }
+
+                return numerosPares;
+
+            }
+
+            console.log(numerosParesNoIntervalo(0, 100));
+
+        </script>
+    </body>
+</html>

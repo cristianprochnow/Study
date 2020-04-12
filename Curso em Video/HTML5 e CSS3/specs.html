@@ -1,0 +1,96 @@
+<!-- &nbsp; é como se fosse um espaço do teclado -->
+<!--&shy; coloca hífen quando a pavra é quebrada, é um <wbr/> "melhorado"-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head >
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/specs.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre Google Glass</title>
+</head>
+
+<script language="javascript" src="javascript/funcoes.js"></script>
+
+<body>
+
+<div id="interface">
+
+	<header id="cabecalho">
+
+		<hgroup>
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>
+		</hgroup>
+
+		<img id="icone" src="image/especificacoes.png"/>
+
+<nav id="menu" onmouseout="mudaFoto('image/especificacoes.png')">
+
+<!--ou então, ao invés de colocar o "onmouseout" no "nav", pode colocar em cada "li", cê que escolhe-->
+
+	<h1>Menu Principal</h1>
+	<ul>	
+		<li onmouseover="mudaFoto('image/home.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('image/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('image/fotos.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('image/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('image/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+<section id="corpo-full">
+
+	<article id="noticia-principal">
+
+		<hgroup id="cabecalho-artigo">
+
+			<h3>Glass > Especificações</h3>
+			<h1>Raio-X no Google Glass</h1>
+			<h2>por Unknown User</h2>
+			<h3 class="right">Atualizado em 01/Maio/2013</h3>
+
+		</hgroup>
+
+			<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+			<section id="conteudo">
+				
+				<img src="image/glass-esquema-marcado.jpg" usemap="#meumapa">
+
+					<map name="meumapa">
+					
+						<!--<area shape="rect" coords="185,207,265,256" href="google-glass.html#tela" target="janela"/>-->
+
+						<area shape="poly" coords="183,219,266,208,265,243,186,256" href="google-glass.html#tela" target="janela">
+
+						<area shape="circle" coords="157,244,12" href="google-glass.html#camera" target="janela">
+
+						<area shape="circle" coords="76,50,10" href="google-glass.html#gadgets" target="janela">
+
+						<area shape="poly" coords="28,145,82,216,81,249,25,167" href="google-glass.html#sensores" target="janela">
+
+					</map>
+
+				<iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+			
+			</section>
+
+	</article>
+
+</section>
+
+<footer id="rodape">
+	<p>Copyright &copy; 2019 - by Unknown User <br/>
+	<a href="http://facebook.com" target="_blank">Facebook</a> | 
+	<a href="http://twitter.com" target="_blank">Twitter</a></p>
+</footer>
+
+</div>
+
+</body>
+</html>

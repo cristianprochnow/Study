@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../../node_modules/bootstrap/css/bootstrap.css" />
+        <link rel="icon" type="image/x-icon" href="../../../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <button class="btn btn-block btn-outline-success mt-3" id="addSquare" onclick="squareCreator()" type="button">Adicionar Quadrado</button>
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-block btn-outline-danger mt-3" type="button" onclick="squareRemover()">Remover Quadrado</button>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12" id="square-box"></div>
+            </div>
+        </div>
+        
+        <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="functions.js"></script>
+    </body>
+</html>

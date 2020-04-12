@@ -1,0 +1,254 @@
+"navbar" é a tag padrão para menus.
+
+"navbar-expand-lg" define em quais medidas o menu vai se expandir
+ou então ficar retraído, como por exemplo, neste caso, está dizendo que
+irá se expandir quando a medida da tela por "larga" o suficiente.
+
+"container" é a tag que faz com que seja formada uma "caixa", fazendo assim
+com que o conteúdo não fique ao relento, fluído no site.
+
+"navbar-brand" define que o que esta sendo nomeado é marcador
+do menu, sendo assim, nesse caso, um título (h1) com Margin Button = 0 (mb-0).
+
+"navbar-toggle" indica, neste caso, o botão que vai ser responsável por exibir ou 
+esconder o conteúdo que está abaixo dele demarcado.
+
+data-target="#navbarSite" indica que o conteúdo que irá ser mostrado está no div 
+nomeado com esta id.
+
+Ou seja, já que possui "navbarSite" com id, e em cima está sendo referenciado isso, então
+quando solicitado, os dados vão ser alternados para o que está abaixo contido no div.
+
+Já que as tags principais do menu foram definidas como a largura responsiva (navbar-expand-lg), 
+"collapse" pode significar que este conteúdo vai ser quebrado, dependendo da largura, fazendo 
+com que o botão anteriormente mostrado seja ativido, sendo que todo este conteúdo demarcado pela id 
+ficará dentro daquele botão.
+
+"navbar-nav" fica responsável por ser de fato o menu navegável, por isso que não recebe medidas 
+para ser responsivo. É a parte navegável do menu (navbar-NAV).
+
+"mr-auto" fica responsável por deixar o item totalmente à esquerda, como se fosse um float: left;
+o mesmo esquema serve para "ml", usado a seguir.
+
+"nav-item" é cada item navegável dentro do nav de navegação
+
+Essa parte define um novo item navegável, porém, este conterá dentro de si um outro div 
+com conteúdo, já que aparecá como dropdown.
+
+"nav-link dropdown-toggle" indica que será um link navegável, do menu, porém servirá como 
+alternador de conteúdo, ficando oculto ou visível conforme o clique, ou seja, aparecerá ou 
+não um submenu toda vez que for requerido seu surgimento.
+
+O tipo de "data-toggle" neste caso, evidencia que o conteúdo será mostrado em forma de 
+menu dropdown, ou então em um simples dropdown.
+
+O "dropdown-menu" irá aparecer pois está dentro do "li", que foi ativado pelo "a". É como se 
+"li" fosse a casa, "a" a porta e "div" o conteúdo que há dentro da casa.
+
+"form-inline", conforme o próprio nome já diz, fica responsável por colocar um form 
+todo numa linha só, fazendo assim com que o botão de confirmar, por exemplo, fique 
+logo ao lado.
+
+A classe "carouse slide" determina assim que o div ficará responsável por ser um carousel 
+em forma de slides, sendo assim definido também no "data-ride", tornando assim com que os dados 
+fiquem sempre em transação.
+
+Esta lista com classe "carousel-indicators" fica responsável por ser o indicador 
+de qual das imagens estão aparecendo no momento. Por exemplo, caso o segundo li (sata-slide-to="1") esteja 
+ativo, então a segunda imagem está aparecendo na tela.
+
+Com o "data-target" ele indica que os dados a serem rastreados estão no item com id "carouselSite", 
+por isso que o carousel em si foi nomeado com esta id.
+
+A classe "active" indica que ele vai ser o primeiro a aparecer na tela, ou seja, ele será o 
+ponto que indicará quando o primeiro slide estive ativado
+
+Nesta classe "carousel-inner" definirá o conteúdo do carousel. É onde estarão todas as imagens e 
+títulos que formarão o carousel.
+
+Cada uma dessas div's (com classe "carousel-item") indica um slide do carousel. Dentro dela 
+estarão o link de cada uma das imagens e também os títulos/textos acompanhantes.
+
+A classe "active" indica que este será o primeiro slide, o que dará início ao carousel
+
+a classe "img-fluid" indica que ela ocupará todo o espaço que estiver disponível 
+de onde ela estiver dentro. Sendo assim definido ela tentará preencher todo 
+o espaçamento
+
+e o "d-block" é tipo como um display: block; no CSS, definindo assim como um conteúdo 
+mais sólido
+
+o "carousel-caption" se responsabiliza por ser o texto presente em cada slide, como por 
+exemplo títulos, breves resenhas etc
+
+o "d-none" fica responsável por desaparecer com o conteúdo quando o mesmo ser menor que a 
+medida posteriormente definida (que neste caso é "d-md-block"). Ou seja, quando a largura 
+da tela for menor que "md", então tudo o que está contido em "carousel-caption" ficará 
+oculto, é tipo um display: hidden;
+
+estas tags d-none e d-tamanho_que_quiser-block funciona para qualquer item
+
+esses "a" ficam responsáveis por servir como os botões de próximo e anterior para 
+os slides, eles é quem servirão como artifício caso o usuário queira interagir 
+com a movimentação do carousel.
+
+o href direcionando para a id do carousel tem como objetivo dizer que o link 
+se relaciona fundamentalmente com a movimentação do carousel
+
+a classe "carousel-control-prev" ou "carousel-control-next" indica que esses links 
+trocarão os slides para o próximo ou o anterior da ordem, tendo assim sua função e 
+aparência de botão (conforme role="button") e passando o slide para frente ou para 
+trás (data-slide="prev" ou data-slide="next")
+
+conforme já diz o nome da classe, esse primeiro span fica responsável por servir 
+como o ícone de prev ou next
+
+a classe "sr-only" relaciona-se com a acessibilidade
+
+"data-spy" vai ser como um espião do conteúdo que está sendo exibido ou 
+também de alguma ação a ser tomada, nesse caso, o scroll ser usado. O 
+"data-target" indica qual conteúdo está sendo referenciado e o 
+"data-offset" indica como se fosse um padding, em que indica qual a 
+distância em que o conteúdo irá começar a ser rastreado
+
+a classe "card" cria mini-caixas que podem assim ser usadas como "Post-it" 
+no site, por exemplo. Podem ser inseridas imagens, links, botões, textos, 
+listas etc
+
+pode ser usada uma simples imagem com a tag "cad-img-top" para 
+servir como um cabecalho, ou então pode-se usar a própria tag 
+"card-header"
+
+esta é a sessão que fica de fato o conteúdo do card. A classe 
+"card-body" serve como se fosse um "body" no HTML, aqui dentro é 
+colocado todo o conteúdo relevante do card
+
+"card-title" formata o título em si do card
+
+"card-subtitle" define que o que for escrito é um subtítulo 
+do card, podendo por exemplo, ser usadas classes como 
+"text-muted" para modificar um pouco a estética daquela parte
+
+para textos dentro do "card-body", indica-se usar "card-text", que 
+assim aplica uma formatação coesa ao conteúdo total do site
+
+"list-group" define que o que está a seguir é uma lista, formatando-a 
+da melhor forma possível, e "list-group-flush" é como se fosse 
+o tipo de lista que deseja-se aplicar
+
+"list-group-item" define cada item da lista que está sendo 
+usada e assim mantém o conteúdo coerente
+
+active, neste caso, é usado para dar destaque a uma 
+parte específica da lista, como por exemplo, neste caso 
+transforma a fonte que antes era preta, em branca 
+e coloca o fundo como azul, ao invés de branco
+
+e por fim, estes são os links de um card, e faz assim 
+com que sejam formatados e não quebrem o conteúdo 
+do box do card
+
+já que pode ser usado um "card-header", há também o 
+"card-footer", proporcionando uma outra formatação, 
+que coloca seu conteúdo diferente e menos chamativo que 
+o anterior
+
+o "tablist" muito provavelmente serve para dizer que esta é lista com 
+o conteúdo que irá ser trocado, e o "tabcontent" mostra o conteúdo de 
+cada troca
+
+o "show active" garante que ele seja o primeiro a ser exibido (active) e já 
+seja exibido antes mesmo de pressionar o link (show)
+
+a classe "embed-responsive" fica responsável por criar quase que um 
+iframe na página, porém, já formatado e "anti-quebra", mantendo a 
+proporção desejada (neste caso 16:9) independente do tamanho da tela 
+ou do vídeo ali colocado
+
+classe "embed-responsive-item" é necessária quando o desejo for 
+colocar algum iframe, por exemplo, pois sua formatação ficará 
+perfeita ao espaço disponível
+
+o "form-row" é como se fosse um "row" normal, podendo assim abrir colunas 
+dentro do mesmo. Porém é uma formatação mais adequada para um form, conforme 
+o próprio nome já diz
+
+"form-control" é a formatação do Bootstrap para os inputs, sendo também 
+de tipos diferentes para arquivos e checkboxes por exemplo
+
+o Bootstrap também possui um plugin que faz verificações de campo, em um 
+formulário, porém é necessária a instalação em separado deste
+
+este é o link que vai acionar o popover, que é quase como uma mini caixa de 
+mensagem que assim ajuda o usuário
+
+o tabindex="0" é requisito, ou seja, obrigatório
+
+data-toggle="popover" é também nessário pois indica que o modo de alternância 
+de dados será de forma "popover" e também esta configuração irá ser importante 
+para a função JavaScript a seguir
+
+data-placement="right" indica o posicionamento da caixa de informação que, 
+neste caso, está a direita (right)
+
+data-trigger="focus" indica que o principal determinante para o desaparecimento 
+da caixa será o foco do clique, ou seja, caso o usuário clique em qualquer outro 
+lugar do site, que não seja a caixinha, esta irá sumir, não precisando assim 
+clicar novamente no botão de ajuda para a caixa sumir
+
+title="" simboliza o título da caixinha, é como se fosse um "<h1>" do conteúdo da 
+caixa
+
+data-content="" indica assim, por fim, o conteúdo "bruto" que será exibido na caixa, 
+sendo assim usado para apresentar um texto explicativo, por exemplo
+
+"btn-group" define que a seguir serão colocados botões em sequência, 
+em conjunto, é tipo como um "list-group", só que de botões
+
+a tag "vertical" simboliza que ficarão em coluna, e não horizontalmente
+
+"btn-block" indica que o botão ocupará toda a largura da div que ele 
+está contido
+
+"btn-group-lg" indica o tamanho do botão, nesse caso, a altura do botão e 
+o tamanho da fonte
+
+"blockquote" serve para colocar citações ou então pequenas mensagens como 
+o copyright por exemplo
+
+e a classe "blockquote-footer" e também a tag "cite" formatam mais discretamente 
+a fonte ali colocada, colocando-a como apenas a indicação de quem é o criador 
+da citação ou do que está ali sendo exibido. É como se fosse um "text-muted"
+
+é indicado que o conteúdo do modal fique um tanto separado do conteúdo total 
+do site, para que assim não aja conflito de conteúdo
+
+a classe "modal" são aquelas caixas de diálogo que aparecem no site, às vezes. 
+Tipo as de "tem certeza que ser realizar esta mudança?", ou então para preencher 
+algum dado específico, é tipo como os "alert" no JavaScript
+
+Esse "tabIndex" negativo serve para por exemplo, indicar que este item vai se 
+sobrepor aos outros da página, quando pressionada a tecla Tab
+
+o "role", neste caso, indica que esta é uma caixa de diálogo, e tem uma função 
+específica
+
+o "fade" é usado para dar um efeito de transição, é que nem o "slide" do 
+carousel
+
+a classe "modal-dialog" indica o tipo de conteúdo que está presente 
+no modal, que neste caso é o diálogo, dando assim brecha para que seu 
+conteúdo seja formado. O modal geral forma a "caixa bruta" do conteúdo 
+e o "modal-dialog" forma uma estrutura adequada ao conteúdo que irá 
+preencher esta caixa
+
+se quiser mexer no tamanho, é só colocar logo em seguida do modal-dialog, 
+como "modal-sm" ou "modal-lg" por exemplo
+
+indica o conteúdo do modal, é a parte em que constarão todo o 
+código do conteúdo a ser exibido
+
+
+dentro do modal, pode ter toda uma formação de colunas, como um layout 
+normal do site, basta apenas colocar tudo dentro de um container 
+(ou não) e pronto

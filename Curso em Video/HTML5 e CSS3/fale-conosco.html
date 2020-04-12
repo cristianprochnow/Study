@@ -1,0 +1,226 @@
+<!-- &nbsp; é como se fosse um espaço do teclado -->
+<!--&shy; coloca hífen quando a pavra é quebrada, é um <wbr/> "melhorado"-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head >
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <title>Tudo sobre Google Glass</title>
+</head>
+
+<script language="javascript" src="javascript/funcoes.js"></script>
+
+<body>
+
+<div id="interface">
+
+    <header id="cabecalho">
+
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+
+        <img id="icone" src="image/contato.png"/>
+
+<nav id="menu" onmouseout="mudaFoto('image/contato.png')">
+
+<!--ou então, ao invés de colocar o "onmouseout" no "nav", pode colocar em cada "li", cê que escolhe-->
+
+    <h1>Menu Principal</h1>
+    <ul>    
+        <li onmouseover="mudaFoto('image/home.png')"><a href="index.html">Home</a></li>
+        <li onmouseover="mudaFoto('image/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('image/fotos.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('image/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('image/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+
+<section id="corpoForm">
+
+    <article id="noticia-principal">
+
+        <hgroup id="cabecalho-artigo">
+
+            <h3>Fale Conosco > Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h2>por Unknown User</h2>
+            <h3 class="right">Atualizado em 01/Maio/2013</h3>
+
+        </hgroup>
+
+    </article>
+
+</section>
+
+
+<form method="post" id="cForm" oninput="calc_total();">
+
+    <fieldset id="usuario">
+
+        <legend>Identificação do Usuário</legend>
+            
+            <p><label for="cName">Nome: </label><input type="text" name="tName" id="cName" size="20" placeholder="Nome Completo" required="required"/></p>
+
+            <p><label for="cPass">Senha: </label><input type="password" name="tPass" id="cPass" size="8" maxlength="10" placeholder="10 dígitos" required="required" /></p>
+
+            <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="20" placeholder="usuario@dominio" required="required" /></p>
+            
+                <fieldset id="sexo">
+
+                    <legend>Sexo:</legend>
+                        
+                        <input type="radio" name="tSexo" id="sexoM"/><label for="sexoM">Masculino</label>
+                        <br/>
+                        <input type="radio" name="tSexo" id="sexoF"/><label for="sexoF">Feminino</label>
+
+                </fieldset>
+
+            <p><label for="cDate">Data de Nascimento: </label><input type="date" name="tDate" id="cDate" required="required"/></p>
+
+    </fieldset>
+
+
+    <fieldset id="endereco">
+
+        <legend>Endereço do Usuário</legend>
+            
+            <p><label for="cLog">Logradouro: </label><input type="text" name="tLog" id="cLog" placeholder="Rua, Av, Trav, ..." size="15" required="required" />
+            <label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" placeholder="Número da Residência" size="5" min="0" /></p>
+
+            <p><label for="cSta">Estado: </label><select name="tSta" id="cSta" required="required" />
+                
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="AC">Acre (AC)</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="RS">Rio Grande do Norte (RN)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="BA">Bahia (BA)</option>
+                </optgroup>
+
+                <optgroup label="Região Centro-Oeste">
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="GO">Goiás (GO)</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="SC" selected="selected">Santa Catarina (SC)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                </optgroup>
+
+            </select></p>
+
+            <p><label for="cCity">Cidade: </label><input type="text" name="tCity" id="cCity" size="20" list="cities" placeholder="Sua Cidade" required="required" /></p>
+
+                <datalist id="cities">
+                    <option value="Joinville"></option>
+                    <option value="Jaraguá"></option>
+                    <option value="Blumenau"></option>
+                    <option value="Florianópolis"></option>
+                    <option value="Manaus"></option>
+                    <option value="Boa Vista"></option>
+                    <option value="Macapá"></option>
+                    <option value="Belém"></option>
+                    <option value="Palmas"></option>
+                    <option value="Porto Velho"></option>
+                    <option value="Rio Branco"></option>
+                    <option value="São Luís"></option>
+                    <option value="Teresina"></option>
+                    <option value="Fortaleza"></option>
+                    <option value="Natal"></option>
+                    <option value="Recife"></option>
+                    <option value="João Pessoa"></option>
+                    <option value="Aracaju"></option>
+                    <option value="Maceió"></option>
+                    <option value="Salvador"></option>
+                    <option value="Cuiabá"></option>
+                    <option value="Campo Grande"></option>
+                    <option value="Goiânia"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Vitória"></option>
+                    <option value="Belo Horizonte"></option>
+                    <option value="Curitiba"></option>
+                    <option value="Florianópolis"></option>
+                    <option value="Porto Alegre"></option>
+                </datalist>
+
+    </fieldset>
+
+
+    <fieldset id="mensagem">    
+
+        <legend>Mensagem do Usuário</legend>
+            
+            <p><label for="cBar">Grau de Urgência: Mínimo</label><input type="range" name="tBar" id="cBar" min="0" max="100" step="1"/> Máximo</p>
+
+            <p><label for="cMen">Mensagem: </label><textarea name="tMen" id="cMen" cols="40" rows="5" placeholder="Sua mensagem..."/></textarea></p>
+
+    </fieldset>
+
+
+    <fieldset id="pagamento">
+
+        <legend>Quero um Google Glass</legend>
+            
+            <input type="checkbox" name="querAdquirir" id="checkbox1" checked="checked" /><label for="checkbox1">Gostaria de adquirir um Google Glass quando disponível</label> 
+
+            <p><label for="cColor">Cor: </label><input type="color" name="tColor" id="cColor"/></p>
+
+            <p><label for="cQuant">Quantidade: </label><input type="number" name="tQuant" id="cQuant" min="0" /></p>
+            
+            <p><label for="cValor">Preço Total: R$ </label><input type="text" name="tValor" id="cValor" placeholder="Total a Pagar" readonly="readonly" /></p>
+
+    </fieldset>
+
+    <div id="botao">
+
+        <!--<input type="submit" name="tBotao" id="cBotao" value="Enviar" />-->
+        <input type="image" src="image/botao-enviar.png" name="tBotao" id="cBotao">
+
+    </div>
+
+</form>
+
+
+<footer id="rodape">
+    <p>Copyright &copy; 2019 - by Unknown User <br/>
+    <a href="http://facebook.com" target="_blank">Facebook</a> | 
+    <a href="http://twitter.com" target="_blank">Twitter</a></p>
+</footer>
+
+</div>
+
+</body>
+</html>

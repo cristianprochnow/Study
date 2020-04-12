@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="../node_modules/bootstrap/css/bootstrap.css" />
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row justify-content-center my-4">
+                <div class="com-sm-12">
+                    <h1 class="display-3">To Do</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul id="listToDo" class="list-group my-2 text-center">
+                        <!-- <li class="list-group-item list-group-item-action">
+                            <p class="mb-3">OK</p>
+                            <button class="btn btn-block btn-outline-danger" id="deleteToDo">Excluir</button>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-sm-12">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-8 my-2 my-sm-auto">
+                                <textarea 
+                                    
+                                    name="toDo" 
+                                    class="form-control text-muted" 
+                                    id="inputToDo" 
+                                    rows="3" 
+                                    placeholder="Adicione um To Do..."
+                                
+                               ></textarea>
+                            </div>
+
+                            <div class="form-group col-sm-4 my-auto">
+                                <div class="btn-group-vertical btn-block">
+                                    <button 
+                                        
+                                        type="reset" 
+                                        name="reset" 
+                                        value="Redefinir" 
+                                        class="btn btn-danger" 
+                                    
+                                    >Redefinir</button>
+
+                                    <button 
+                                        
+                                        type="button"
+                                        name="submit" 
+                                        value="Adicionar" 
+                                        class="btn btn-success" 
+                                        id="submitToDo" 
+                                        onclick="createToDo()"
+                                    
+                                    >Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="ToDo.js"></script>
+    </body>
+</html>

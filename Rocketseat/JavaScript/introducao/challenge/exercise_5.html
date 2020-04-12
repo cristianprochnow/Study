@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang='PT-BR'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width' />
+
+        <link rel='icon' type='image/x-icon' href='../../../icons/js-icon.png' />
+
+        <title>Desafio - 5º Exercício</title>
+    </head>
+    
+    <body>
+        <script>
+        
+            // questões em docs/exercise-list.pdf
+
+            
+            function descreveUsuario(listaDeUsuarios) {
+
+                // define as variáveis a serem usadas
+                var nome, 
+                    habilidades, 
+                    mensagem,
+                    mensagens = [],
+                    habilidadesDescritas = []; 
+
+
+                for (let value of listaDeUsuarios) {
+
+                    // pega o valor da propriedade nome do objeto
+                    nome = value.nome;
+                    // pega o valor da propriedade habilidades do objeto
+                    habilidades = value.habilidades;
+
+                    /*
+                        empurra para o índice 0 da array 
+                        habilidadesDescritas outra array que corresponde 
+                        ao valor da propriedade "habilidades" do objeto 
+                        em questão que está sendo abordado
+                    */
+                    habilidadesDescritas.push(habilidades);
+
+                    // monta a mensagem a ser exibida
+                    mensagem = 'O ' + nome + ' possui as habilidades: ' + habilidadesDescritas.join() + '.';
+
+                    // empurra a mensagem para o array "mensagens"
+                    mensagens.push(mensagem);
+
+                    /*
+                        apaga o último índice da array habilidadesEscritas, 
+                        ou seja, o índice 0, fazendo assim com que, já que 
+                        encontra-se dentro de um looping, as habilidades que 
+                        foram adicionadas mais recentemente não se misturem com 
+                        as habilidades de outros jogadores, fazendo assim com 
+                        que cada jogador fique apenas com as suas habilidades 
+                        descritas, e já que a array "mensagens" anteriormente 
+                        já guardou o conteúdo que estava presente nesta array, 
+                        apagar esses dados de "habilidadesDescritas" não tem 
+                        problema algum
+                    */
+                    habilidadesDescritas.pop();
+
+                }
+
+
+                return mensagens;
+
+            }
+
+            var usuarios = [
+
+                {
+                    nome: 'Diego',
+                    habilidades: ['JavaScript', 'ReactJS', 'Redux']
+                },
+                {
+                    nome: 'Gabriel',
+                    habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+                }
+
+            ];
+
+            console.log(descreveUsuario(usuarios));
+
+        </script>
+    </body>
+</html>

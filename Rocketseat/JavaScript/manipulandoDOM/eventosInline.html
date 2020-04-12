@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <!--
+                esses são os eventos inline, ou seja, são ações que serão 
+                ativadas diretamente conforme sua descrição indica, não 
+                precisando de qualquer outro comando rodando no back-end, 
+                por exemplo
+            -->
+            <button onmouseover="cursorPassouPorCima()" onclick="itemClicado()">Me pressione</button>
+        </div>
+
+        <script>
+            
+            // DOM é a "árvore" HTML dentro do documento
+
+
+            function itemClicado() {
+
+                return alert('Botão foi clicado');
+
+            }
+
+
+            function cursorPassouPorCima() {
+
+                return alert('Cursor passou por aqui...');
+
+            }
+
+        </script>
+    </body>
+</html>

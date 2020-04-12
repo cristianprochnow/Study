@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="style/css/style.css" />
+
+        <link rel="icon" type="image/x-icon" href="image/bootstrap-stack.png" />
+
+        <title>Curso de Bootstrap 4</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
+            <div class="container">
+                <a href="#" class="navbar-brand h1 mb-0">Curso</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Início</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Perfil</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Depoimentos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contatos</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navDrop" data-toggle="dropdown">Social</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Facebook</a>
+                                <a href="#" class="dropdown-item">Instagram</a>
+                                <a href="#" class="dropdown-item">Twitter</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input class="form-control ml-lg-4 mr-lg-2" type="search" placeholder="Buscar..." />
+
+                        <button class="btn btn-light" type="submit">OK</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="carousel slide" id="carouselSite" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselSite" data-slide-to="0"></li>
+                <li data-target="#carouselSite" data-slide-to="1"></li>
+                <li data-target="#carouselSite" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/wallpaper-1.png" class="img-fluid d-block" />
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Lorem ipsum dolor sit amet</h1>
+
+                        <p class="lead">Donec lectus massa, varius id ante quis, gravida porta ligula</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="image/wallpaper-2.jpg" class="img-fluid d-block" />
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Nunc dictum nec risus</h1>
+
+                        <p class="lead">Phasellus semper urna quis arcu malesuada viverra.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="image/wallpaper-3.jpg" class="img-fluid d-block" />
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Fusce aliquet quis purus</h1>
+
+                        <p class="lead">Curabitur faucibus posuere est id lobortis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#carouselSite" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <a href="#carouselSite" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h1 class="display-3 text-reset"> <i class="fa fa-cube text-primary"></i> Lorem ipsum</h1>
+
+                    <p>Nulla suscipit ullamcorper est sed scelerisque. Morbi eget velit in felis aliquam posuere.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 mb-5">
+                    <nav class="navbar navbar-light bg-light" id="navbarVertical">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item1">Lorem ipsum</a>
+
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3" href="#item1-1">Integer pulvinar</a>
+                                    <a class="nav-link ml-3" href="#item1-2">Donec facilisis</a>
+                                </nav>
+
+                            <a class="nav-link" href="#item2">Nulla suscipit</a>
+
+                            <a class="nav-link" href="#item3">Vivamus commodo</a>
+
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3" href="#item3-1">In fringilla</a>
+                                    <a class="nav-link ml-3" href="#item3-2">Sed vel</a>
+                                </nav>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div class="col-sm-8 mb-5">
+                    <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollSpySite">
+                        <h4 id="item1">Lorem ipsum dolor sit amet</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit ullamcorper est sed scelerisque. Morbi eget velit in felis aliquam posuere. Sed tempor nunc quis ex imperdiet, quis malesuada purus rhoncus. Nam maximus hendrerit dui non facilisis. Nullam ac blandit estDonec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit amet.</p>
+
+                            <h5 id="item1-1">Nunc efficitur</h5>
+                            <p>Nunc efficitur arcu sed quam imperdiet, nec ornare urna blandit. Sed vel dictum ligula. In sit amet orci gravida, posuere est in, euismod lacus. Quisque tempor, turpis eget consequat convallis, ante ante cursus est, Donec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit ametsed dapibus quam elit id ante. Donec id luctus libero. Nulla malesuada tempor ante, eleifend pellentesque sapien pellentesque in. Pellentesque tincidunt purus quam, sit amet congue dui tempor eget.</p>
+
+                            <h5 id="item1-2">Donec facilisis</h5>
+                            <p>Donec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisisDonec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit amet id molestie at, eleifend ac enim. Ut ut gravida libero. </p>
+
+
+                        <h4 id="item2">Orci varius</h4>
+                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis semper metus vitae velit tempus mollDonec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit ametis. Nunc eu purus sed nulla placerat laoreet vel nec diam. Phasellus ornare massa sed tellus molestie pretium. Ut nec magna a nulla cursus sodales. Cras non purus non enim blandit luctus. Praesent semper, tellus vel rhoncus tincidunt, nunc urna pretium tortor, vitae posuere lectus odio a lectus.</p>
+
+
+                        <h4 id="item3">Aenean gravida</h4>
+                        <p>Suspendisse sollicitudin augue quis diam convallis pulvinar. Nunc eu gravida massa. Quisque convallis ligula non eros tincidunt, quis mattis augue blandit. Vivamus nibh augue, mollis et libero vel, ultrices consectetur arcu. DonecDonec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit amet tortor sem, viverra et tempus sed, condimentum a nisl.</p>
+
+                            <h5 id="item3-1">Phasellus ornare</h5>
+                            <p>Phasellus ornare massa sed tellus molestie pretium. Ut nec magna a nulla cursus sodales. Cras non purus non enim blandit luctus. Donec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit ametPraesent semper, tellus vel rhoncus tincidunt, nunc urna pretium tortor, vitae posuere lectus odio a lectus. Nunc dapibus volutpat lectus ac sollicitudin.</p>
+
+                            <h5 id="item3-2">Suspendisse sollicitudin</h5>
+                            <p>Vivamus nibh augue, mollis et libero vel, ultrices consectetur arcu. Donec tortor sem, viverra et tempus sed, condimentum a nisl. Phasellus malesuada dui et magna lobortis, vel pharetra nisi gravida. Morbi accumsan ac felis id malesuada. Vestibulum finibus quam tempor, egestas nibh mattis, volutpat mi. Donec facilisis rhoncus sapien, eget gravida nunc consequat et. In euismod, lectus non accumsan dictum, nisi sem auctor velit, et tempor ante felis in diam. Etiam accumsan erat velit. Quisque tortor mauris, facilisis id molestie at, eleifend ac enim. Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit amet Ut tempor odio non magna commodo, nec convallis nisi lobortis.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="image/card-image-1.jpg" class="card-img-top" />
+
+                            <div class="card-body">
+                                <h4 class="card-title">Lorem ipsum</h4>
+                                <h6 class="card-subtitle mb-3 text-muted">Dolor sit amet</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit ullamcorper est sed scelerisque. Morbi eget velit in felis aliquam posuere.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item active">Vestibulum fermentum</li>
+                                <li class="list-group-item">Donec facilisis</li>
+                                <li class="list-group-item"> In euismod</li>
+                            </ul>
+
+                            <div class="card-body">
+                                <a href="#" class="card-link">Sed tempor</a>
+                                <a href="#" class="card-link">Donec facilisis</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="image/card-image-2.jpg" class="card-img-top" />
+                            
+                            <div class="card-body">
+                                <h4 class="card-title">Donec facilisis</h4>
+                                <h6 class="card-subtitle mb-3 text-muted">Aenean placerat</h6>
+                                <p class="card-text">Ut ut gravida libero. Nullam consequat efficitur tortor vel auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam pharetra tellus a sem rutrum, vitae varius quam scelerisque. Curabitur varius eget erat bibendum lacinia. Donec lobortis lobortis neque in dapibus. In fringilla magna eros, eu sollicitudin orci fermentum sit amet.</p>
+
+                                <a class="btn btn-outline-primary" href="#" data-toggle="modal" data-target="#siteModal">Donec</a>
+                            </div>
+
+                            <div class="card-footer text-muted">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="image/card-image-3.jpg" class="card-img-top" />
+
+                            <div class="card-body">
+                                <h4 class="card-title">Sed tempor</h4>
+                                <h6 class="card-subtitle mb-3 text-muted">Vestibulum fermentum</h6>
+                                <p class="card-text">Quisque at lorem a tortor lobortis pellentesque. Vivamus commodo at diam ac consequat. Integer pulvinar felis metus, in scelerisque arcu placerat vel.</p>
+                            </div>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Nullam consequat</li>
+                                <li class="list-group-item">Quisque at</li>
+                                <li class="list-group-item">Vivamus commodo</li>
+                                <li class="list-group-item">Curabitur varius</li>
+                            </ul>
+
+                            <div class="card-body">
+                                <a href="#" class="card-link">In sit amet</a>
+                                <a href="#" class="card-link">Duis semper</a>
+                                <a href="#" class="card-link">Ut nec magna</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-3"> <i class="fa fa-camera-retro text-primary"></i> Aliquam quis urna</h1>
+                        <p class="lead">Mauris vestibulum at purus quis commodo. Vestibulum blandit dui vel turpis ornare luctus. Vestibulum feugiat lorem purus, eu consectetur tellus egestas ut. </p>
+
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills justify-content-center mb-5" id="pills-nav" role="tablist">
+                            <li class="nav-item">
+                                <a href="#nav-item-01" class="nav-link active" id="nav-pills-01" data-toggle="pill">Lorem</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#nav-item-02" class="nav-link" id="nav-pills-02" data-toggle="pill">Ipsum</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#nav-item-03" class="nav-link" id="nav-pills-03" data-toggle="pill">Dolor</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="nav-pills-content">
+                            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/APWhx97QvxE"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <h3>Proin varius</h3>
+
+                                        <p>Curabitur ut enim maximus, molestie nibh vitae, pharetra eros. Pellentesque a rhoncus nibh. Morbi tristique suscipit nisl non consequat. Aliquam dapibus turpis in auctor luctus. Vivamus ligula sem, imperdiet at pulvinar vel, dapibus vel libero. Nullam libero neque, finibus id sagittis ac, scelerisque in eros. Sed venenatis, urna a suscipit interdum, lectus velit pharetra lorem, id aliquet lectus lacus in est. Nulla a bibendum mauris, eu eleifend dui. Donec sollicitudin in eros vel volutpat.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel fade" id="nav-item-02" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F-YOTJoKz_o"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <h3>Duis venenatis</h3>
+
+                                        <p>Ut lacinia elementum diam, eu molestie diam mollis eget. Suspendisse sollicitudin sapien ligula, non sodales ante luctus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ex quam, ullamcorper id velit a, laoreet ultrices est. Vivamus tortor neque, sollicitudin efficitur erat quis, fringilla consectetur metus. Vivamus interdum volutpat justo, et porttitor turpis accumsan id. Nullam felis urna, vulputate tempor suscipit suscipit, aliquet a magna.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel fade" id="nav-item-03" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4fk2prKnYnI"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <h3>Ut lacinia</h3>
+
+                                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pulvinar placerat diam et consectetur. Cras ut libero eget lacus interdum mattis tristique eu nisi. Morbi rutrum turpis non erat tempus varius. Phasellus pharetra blandit commodo. Etiam volutpat in felis ut varius. Sed a nisl nec purus mollis eleifend. Etiam ante leo, tincidunt ac dui ut, finibus porta lacus. Phasellus quis metus imperdiet dolor posuere molestie.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h1 class="display-3"> <i class="fa fa-wpforms text-primary"></i> Duis venenatis</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <form method="POST" action="#">
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputNome">Seu nome</label>
+                                <input type="text" name="userNome" class="form-control" id="inputNome" placeholder="Nome" />
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <label for="inputSobrenome">Seu nobrenome</label>
+                                <input type="text" name="userSobrenome" class="form-control" id="inputSobrenome" placeholder="Sobrenome" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputEndereco">Seu endereço</label>
+                                <input type="text" name="userEndereco" class="form-control" id="inputEndereco" placeholder="Rua/Avenida Porex Emplo" />
+                            </div>
+
+                            <div class="form-group col-sm-2">
+                                <label for="inputNumeroCasa">Nº</label>
+                                <input type="number" name="userNumeroCasa" class="form-control" id="inputNumeroCasa" min="0" placeholder="1234" />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <label for="inputCEP">Seu CEP</label>
+                                <input type="text" name="userCEP" class="form-control" id="inputCEP" placeholder="12345-009" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputCidade">Sua cidade</label>
+                                <input type="text" name="userCidade" class="form-control" id="inputCidade" placeholder="Cidade" />
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <label for="inputEstado">Seu estado</label>
+                                <select name="userEstado" class="form-control" id="inputEstado">
+                                    <option selected>Escolha...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" /> Desejo receber novidades por e-mail
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <input type="reset" name="reset" value="Apagar tudo" class="btn btn-outline-danger" />
+                                <input type="submit" name="submit" value="Enviar" class="btn btn-success" />
+
+                                <a tabindex="0" class="btn btn-info ml-3" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Ut lacinia" data-content="Ut lacinia elementum diam, eu molestie diam mollis eget. Suspendisse sollicitudin sapien ligula, non sodales ante luctus eget. Lorem ipsum dolor sit amet.">Ajuda</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <hr />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Curso</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ligula lectus, auctor ut blandit dignissim, molestie nec neque.</p>
+                    <p>Ut tincidunt risus in neque volutpat varius. Nunc tellus justo, egestas eu congue non, feugiat bibendum libero. Mauris pulvinar sollicitudin odio quis euismod.</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3>Menu</h3>
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action text-primary">Perfil <i class="fa fa-id-badge"></i> </a>
+                        <a href="#" class="list-group-item list-group-item-action text-primary">Serviços <i class="fa fa-briefcase"></i> </a>
+                        <a href="#" class="list-group-item list-group-item-action text-primary">Depoimentos <i class="fa fa-comment"></i> </a>
+                        <a href="#" class="list-group-item list-group-item-action text-primary">Contatos <i class="fa fa-phone"></i> </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3>Social</h3>
+
+                    <div class="btn-group-vertical btn-block btn-group-lg">
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="#" class="btn btn-outline-info"> <i class="fa fa-twitter"></i> Twitter</a>
+                        <a href="#" class="btn btn-outline-warning"> <i class="fa fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">"O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho."</p>
+                        
+                        <footer class="blockquote-footer">
+                            Biz Stone <cite title="Source Title">Fundador do Twitter</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Lorem ipsum dolor</h5>
+
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="image/modal-picture-1.jpeg" class="img-thumbnail" />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h4>Lorem ipsum</h4>
+                                    <h6 class="text-muted">Aliquam rhoncus</h6>
+
+                                    <p>Integer quis iaculis nisl, vel efficitur ex. Aenean sit amet posuere nibh, in gravida nibh. Phasellus rhoncus lobortis neque et condimentum. Duis in ligula sed tortor ornare interdum. Duis feugiat eu nisl nec elementum. Mauris non tellus vel orci venenatis imperdiet lobortis vel orci. Sed gravida mollis massa, sit amet ullamcorper risus congue a. In eu velit laoreet, convallis mi quis, egestas metus. Nullam molestie ultricies mauris, a auctor lorem scelerisque non. Nam ac augue aliquet, lacinia libero nec, rutrum felis. Vivamus ornare aliquam diam quis rutrum. Aliquam semper consectetur quam eget vestibulum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+        <script>
+            /*
+                esta função é obrigatória caso deseje usar o método ali do botão popover. Sem 
+                essa função com JavaScript o link não funcionará
+            */
+            $(function () {
+
+                $('[data-toggle="popover"]').popover()
+
+            })
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" type="image/x-icon" href="../../../icons/js-icon.png" />
+
+        <title>Desafio - 3º Exercício</title>
+    </head>
+    
+    <body>
+        <script>
+        
+            // questões em docs/exercise-list.pdf
+
+
+            function temHabilidadeJavaScript(skills) {
+
+                /*
+                    verifica se dentro da array há algum 
+                    índice que possua o valor == 'Javascript'
+                */
+                let index = skills.indexOf('JavaScript');
+
+                
+                /*
+                    se haver algum índice == 'Javascript', então 
+                    a função retorna true, senão false
+                */
+                return (index !== -1) ? true : false;
+
+            }
+
+            var skills = ['JavaScript', 'ReactJS', 'React Native'];
+
+            console.log(temHabilidadeJavaScript(skills));
+
+        </script>
+    </body>
+</html>

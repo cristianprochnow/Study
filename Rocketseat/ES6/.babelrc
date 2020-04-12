@@ -1,0 +1,16 @@
+/*
+"preset-env" vai reconhecer o ambiente que 
+estamos trabalhando (que nesse caso é WEB), 
+e vai converter todo o conteúdo de ES6 para 
+que os navegadores consigam entender essa 
+"linguagem"
+*/
+{
+	"presets": [
+		"@babel/preset-env"
+	],
+	"plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-async-to-generator"
+	]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+        
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+        
+            var x = 10;
+            var y = 5;
+
+            /*
+                quando se define uma variável após a outra, como 
+                no exemplo das variáveis x e y, pode-se simplesmente 
+                apagar o(s) var(s) seguinte(s) e apenas substituir 
+                por vírgulas, não repetindo-os
+            */
+           var x = 10, y = 5;
+
+           console.log(x);
+           console.log(y);
+
+           /*
+                e ao invés de colocar 2 console.log(), pode-se 
+                simplesmente usar o mesmo esquema das variáveis, 
+                colocando ","
+           */
+            console.log(x, y);
+
+            // operações
+            var resultado = x + y;
+
+            console.log(resultado);
+
+            /*
+                porém, só é possível realizar operações caso 
+                ambos os valores sejam de natureza semelhante, 
+                ou seja, somar uma string com um número é 
+                impossível. Porém caso isso ocorra, o "+" não 
+                servirá como operador, e sim como agente de 
+                concatenação
+            */
+            console.log(resultado); // 15 (10 + 5)
+
+            var z = '10', resultado = z + y;
+            
+            console.log(resultado); // '105' ('10' . 5)
+
+            // outras operações
+            resultado = [x - y, x * y, x / y, x % y];
+            console.log(resultado);
+
+            // outras formas de expressar a operação
+            x += 3; // x = x + 3
+            x -= 3; // x = x - 3
+            x *= 3; // x = x * 3
+            x /= 3; // x = x / 3
+
+            console.log(x);
+
+        </script>
+    </body>
+</html>

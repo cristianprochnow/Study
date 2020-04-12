@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../../node_modules/bootstrap/css/bootstrap.css" />
+        <link rel="icon" type="image/x-icon" href="../../../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Lista de Usuários</h1>
+                </div>
+            </div>
+
+            <div class="row my-1 justify-content-center">
+                <div class="col-sm-6 col-lg-4 my-1">
+                    <input 
+                    type="text" 
+                    name="userName" 
+                    class="form-control" 
+                    id="UserName" 
+                    placeholder="Insira um usuário..." 
+                    />
+                </div>
+
+                <div class="col-sm-4 col-lg-2 my-1">
+                    <div class="btn-group btn-block">
+                        <input 
+                        type="submit" 
+                        name="submit" 
+                        value="OK" 
+                        class="btn btn-success" 
+                        onclick="addUser()" 
+                        />
+
+                        <input 
+                        type="submit" 
+                        name="submit" 
+                        value="Excluir" 
+                        class="btn btn-danger" 
+                        onclick="deleteListItem()" 
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-lg-6">
+                    <div class="list-group my-2 text-center" id="listGroup"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="functions.js"></script>
+    </body>
+</html>

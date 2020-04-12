@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1, shrink-to-fit=no" 
+        />
+
+        <link 
+        rel="stylesheet" 
+        href="../../../node_modules/bootstrap/css/bootstrap.css" 
+        />
+        <link 
+        rel="icon" 
+        type="image/x-icon" 
+        href="../../../../icons/js-icon.png" 
+        />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row my-4 justify-content-center">
+                <div class="col-sm-10 col-lg-8">
+                    <h1 class="display-4 text-center">Teste de Maioridade</h1>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-sm-7 col-lg-6 my-1">
+                    <input 
+                    type="text" 
+                    name="userAge" 
+                    class="form-control" 
+                    id="ageInput" 
+                    placeholder="Insira uma idade..." 
+                    />
+                </div>
+    
+                <div class="col-sm-3 col-lg-2 my-1">
+                    <button 
+                    type="button" 
+                    name="submit" 
+                    class="btn btn-primary btn-block" 
+                    id="submitButton" 
+                    onclick="playAgeCheck()"
+                    >OK</button>
+                </div>
+            </div>
+
+            <div class="row my-5 justify-content-center">
+                <h1 
+                class="display-5 text-center text-primary" 
+                id="msgBox" 
+                ></h1>
+            </div>
+        </div>
+
+        <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- link que referencia o AXIOS para uso -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

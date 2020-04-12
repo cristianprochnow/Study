@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+        
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+            
+            // var declara que o elemento é uma variável
+            var nome = 'Cristian';
+
+            /*
+                Já que o elemento "nome" já foi declarado como
+                variável anteriormente, não há a necessidade de 
+                usar "var" novamente, pois o JavaScript já guardou 
+                a informação de que "nome" é uma variável
+            */
+            nome = 1;
+
+            // tipos de dados
+            var nomenclatura = 'Cristian';
+            var idade = 17;
+            var peso = 70.5;
+            var humano = true;
+
+            // vetores
+            var alunos = ['Diego', 'Gabriel', 'Lucas'];
+
+            // objeto (tipo de POO)
+            var aluno = {
+
+                /*
+                    já que "aluno" é um objeto, essas características 
+                    abaixo não são mais variáveis (conforme estava 
+                    declarado anteriormente), e sim, propriedades do 
+                    objeto "aluno"
+                */
+                nome: 'Cristian',
+                idade: 17,
+                peso: 70.5,
+                humano: true
+
+            };
+
+            console.log(alunos);
+
+            /*
+                para exibir algum item específico da array, basta usar
+                [posição número na array]
+            */
+            console.log(alunos[1]); // Gabriel
+
+            /*
+                já para mostrar apenas alguma propriedade específica 
+                do objeto, basta usar o "."
+            */
+            console.log(aluno.nome); // Cristian
+            console.log(aluno.peso); // 70.5
+
+            /*
+                é possível também reaproveitar dados, usando-os em 
+                objetos, por exemplo
+            */
+            aluno = {
+
+                nome : alunos[2],
+                idade : 15 + 2,
+                peso : 70.5,
+                humano : !false
+
+            };
+
+            console.log(aluno.nome); // Lucas
+            console.log(aluno.idade); // 17
+            console.log(aluno.humano); // true
+        </script>
+    </body>
+</html>

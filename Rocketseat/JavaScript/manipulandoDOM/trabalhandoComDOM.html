@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <input type="text" name="nome" />
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+        
+            /*
+                há várias formas de se conseguir buscar 
+                algum elemento da DOM pelo JavaScript, 
+                podendo assim referenciar pelo ID, pelo 
+                name etc.
+            */
+
+            /*
+                "document" é a tag global que faz alusão 
+                ao DOM em geral, que se refere à estrutura 
+                de elementos HTML
+            */
+            /*
+                "getElementsByTagName" sempre vai retornar 
+                o valor como vetor, independente da quantia 
+                de itens que houver. Aí se quiser selecionar 
+                o primeiro input apenas, por exemplo, é só 
+                colocar "[0]", como a seleção específica padrão 
+                de algum item de um vetor
+            */
+            var inputElement = document.getElementsByTagName('input');
+
+            /*
+                mas há também a possibilidade de usar um outro 
+                comando que substitui qualquer um dos que referenciam 
+                o ID, class etc. Este comando é o "querySelector()"
+            */
+            /*
+                dentro do querySelector eu posso "caminhar" pela 
+                DOM, pois para usá-la eu apenas vou referenciando o 
+                caminho em que o elemento está, tipo como o CSS 
+                faz para personalizar algo totalmente específico
+            */
+            inputElement = document.querySelector('div#app input');
+
+            /*
+                há tambéma possibilidade de selecionar alguma 
+                tag específica do HTML, simplesmente 
+                referenciando alguma propriedade dela usando 
+                "[]"
+            */
+            inputElement = document.querySelector('input[name = nome]');
+            
+            /*
+                "querySelector" sempre vai retornar apenas um 
+                único elemento, ou seja, se tiver mais de um, vai 
+                pegar apenas o primeiro deles. Para retornar como 
+                se fosse um vetor, com todos os itens juntos, usa-
+                -se "querySelectorAll()";
+            */
+            inputElement = document.querySelectorAll('input');
+
+            /*
+                o que antes era feito inline, com o onclick e 
+                semelhantes, é possível também fazer separadamente, 
+                no próprio script JavaScript
+            */
+            inputElement = document.querySelector('input[name = nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function () {
+
+                var text = inputElement.value;
+
+                alert((text.length === 0 ) ? 'Nada inserido' : text);
+
+            }
+
+        </script>
+    </body>
+</html>

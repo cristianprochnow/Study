@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <input id="input" />
+        </div>
+
+
+        <script>
+        
+            /*
+                é possível também não só pegar elementos do 
+                HTML, mas também colocar alguns no próprio 
+                corpo da página, mesmo não estando lá presente
+            */
+            /*
+                e o CSS pode manipular esses elementos 
+                tranquilamente, basta apenas colocar classes 
+                ou id's como atributos e feshow
+            */
+            /*
+                a função 'createElement' faz com que um elemento 
+                seja criado, como se fosse a abertura de uma nova 
+                tag no HTML
+            */
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'https://www.youtube.com/');
+            // ou pode ser também linkElement.href = ''
+
+            /*
+                aqui ele cria um texto e referencia-o como "filha" do 
+                link anteriormente criado, fazendo assim com que ele 
+                seja aquele texto que identifica o link
+            */
+            var textElement = document.createTextNode('Acessar o YouToba');
+            linkElement.appendChild(textElement);
+
+            /*
+                e aqui, fica a parte que identifica a div que já foi 
+                criada para colocar esses elementos dentro, e assim 
+                diz, com a função abaixo (appendChild) que o link 
+                que fora criado é um filho da div#app, ou seja, coloca 
+                o conteúdo lá dentro
+            */
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            /*
+                e nesta última parte, está presente uma das tags que 
+                removem o conteúdo da página, ou seja, mesmo o input 
+                estando presente no HTML, o script faz com que aquele 
+                elemento, na verdade, não exista
+            */
+            var inputElement = document.querySelector('#input');
+            containerElement.removeChild(inputElement);
+
+        </script>
+    </body>
+</html>

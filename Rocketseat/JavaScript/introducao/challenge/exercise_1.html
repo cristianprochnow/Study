@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" type="image/x-icon" href="../../../icons/js-icon.png" />
+
+        <title>Desafio - 1º Exercício</title>
+    </head>
+    
+    <body>
+        <script>
+
+            // questões em docs/exercise-list.pdf
+        
+            var endereco = {
+
+                rua: 'Rua dos Pinheiros',
+                numero: 'Quatro',
+                bairro: 'Centro',
+                cidade: 'São Paulo',
+                uf: 'SP'
+
+            };
+
+
+            /*
+                para referenciar objetos como parâmetro, 
+                usa-se "{}"
+            */
+            function mostraEndereco({endereco}) {
+
+                let rua = endereco.rua,
+                    numero = (typeof endereco.numero === 'number') ? endereco.numero : '(Erro: valor inválido)',
+                    bairro = endereco.bairro,
+                    cidade = endereco.cidade,
+                    uf = endereco.uf;
+
+                let enderecoCompleto = 'O usuário mora em ' + cidade + ' - ' + uf + ', no bairro' + bairro + ', na rua "' + rua + '" com nº ' + numero + '.';
+
+                return enderecoCompleto;
+
+            }
+
+            console.log(mostraEndereco({endereco}));
+
+        </script>
+    </body>
+</html>

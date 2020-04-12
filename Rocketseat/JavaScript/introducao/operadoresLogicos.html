@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <script>
+        
+            // AND === &&
+            // OR === || (shift + \)
+            // NOT === !
+
+            /*
+                o NOT é no mesmo esquema do igual, em 
+                que "!=" verifica apenas o valor e 
+                "!==" verifica o valor e o tipo
+            */
+
+            var sexo = 'F', idade = 19;
+
+
+            if (sexo == 'F' && idade >= 18) {
+
+                console.log('OK');
+
+            }
+
+
+            if (sexo == 'M' || idade >= 18) {
+
+                console.log('OK');
+
+            }
+
+
+            if (sexo != 'M') {
+
+                console.log('OK');
+
+            } else {
+
+                console.log('No');
+
+            }
+
+
+            /*
+                há também a possibilidade de usar as condições 
+                para mexer com variáveis
+            */
+            /*
+                fazendo isso, a variável foi "startada", fazendo 
+                assim com que não precise referenciar duas vezes seguidas, no IF, em seguida
+            */
+            var masculino;
+
+
+            if (sexo == 'M') {
+
+                masculino = true;
+
+            } else {
+
+                masculino = false;
+
+            }
+
+            console.log(masculino); // false
+
+            /*
+                é também possível usar condicional 
+                logo na atribuição de valores a alguma 
+                variável
+            */
+
+            var sexoMasculino = (sexo == 'M');
+
+            console.log(sexoMasculino); // false
+
+        </script>
+    </body>
+</html>

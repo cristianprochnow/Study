@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+
+
+        <script>
+        
+            /*
+                é possível também, estilizar a página usando 
+                JavaScript, substituindo assim o CSS.
+            */
+            /*
+                criou-se uma div, colocando-a assim como filha 
+                do body
+            */
+            var containerElement = document.createElement('div');
+            containerElement.setAttribute('id', 'container');
+
+            var totalContainer = document.querySelector('body');
+            totalContainer.appendChild(containerElement);
+
+            /*
+                e aqui é o estilo do container criado. Tudo que 
+                vez após o "style", são propriedades modificadoras
+            */
+            /*
+                e no CSS usa-se "backgroun-color", mas aqui, ao invés 
+                de usar "-", substitui-se o mesmo por uma letra de 
+                caixa alta. Ao invés de "background-color", usa-se 
+                "backgroundColor", por exemplo
+            */
+            containerElement.style.width = '100px';
+            containerElement.style.height = '100px';
+            containerElement.style.backgroundColor = '#f5f7d9';
+
+        </script>
+    </body>
+</html>

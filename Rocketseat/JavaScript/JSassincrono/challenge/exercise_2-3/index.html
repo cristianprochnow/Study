@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="../../../node_modules/bootstrap/css/bootstrap.css" />
+        <link rel="icon" type="image/x-icon" href="../../../../icons/js-icon.png" />
+
+        <title>Curso JavaScript</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row my-5 justify-content-center">
+                <div class="col-12">
+                    <h1 class="display-4 text-center text-muted">Repositórios GitHub</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-8 my-2 my-sm-0">
+                    <input 
+                    type="text" 
+                    name="gitUser" 
+                    class="form-control" 
+                    id="userInput" 
+                    placeholder="Insira o usuário..." 
+                    />
+                </div>
+
+                <div class="col-sm-4">
+                    <button 
+                    type="button" 
+                    name="submitButton" 
+                    class="btn btn-dark btn-block" 
+                    id="searchButton" 
+                    onclick="showGitRepositories()" 
+                    >Pesquisar</button>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-12" id="listBox">
+                        <ul class="list-group text-center"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

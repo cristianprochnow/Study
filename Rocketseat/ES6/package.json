@@ -1,0 +1,37 @@
+{
+	"name": "ES6",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.7.7",
+		"@babel/core": "^7.7.7",
+		"@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+		"@babel/plugin-transform-async-to-generator": "^7.7.4",
+		"@babel/preset-env": "^7.7.7",
+		"babel-loader": "^8.0.6",
+		"webpack": "^4.41.5",
+		"webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "@babel/polyfill": "^7.7.0"
+	},
+	"scripts": {
+		"dev": "webpack-dev-server --mode=development",
+		"build": "webpack --mode=production",
+		"class": "babel -w ./class/main.js -o ./class/bundle.js",
+		"constLet": "babel -w ./const_let/main.js -o ./const_let/bundle.js",
+		"operacoesArray": "babel -w ./operacoesArray/main.js -o ./operacoesArray/bundle.js",
+		"arrowFunction": "babel -w ./arrowFunction/main.js -o ./arrowFunction/bundle.js",
+		"valorPadrao": "babel -w ./valoresPadrao/main.js -o ./valoresPadrao/bundle.js",
+		"deses": "babel -w ./desestruturacao/main.js -o ./desestruturacao/bundle.js",
+		"respread": "babel -w ./rest_spread/main.js -o ./rest_spread/bundle.js",
+		"tempTerals": "babel -w ./templateLiterals/main.js -o ./templateLiterals/bundle.js",
+		"objShortSynx": "babel -w ./objectShortSyntax/main.js -o ./objectShortSyntax/bundle.js",
+		"ex1": "babel -w ./concepts/challenge/exercise_1/main.js -o ./concepts/challenge/exercise_1/bundle.js",
+		"ex2": "babel -w ./concepts/challenge/exercise_2/main.js -o ./concepts/challenge/exercise_2/bundle.js",
+		"ex3": "babel -w ./concepts/challenge/exercise_3/main.js -o ./concepts/challenge/exercise_3/bundle.js",
+		"ex4": "babel -w ./concepts/challenge/exercise_4/main.js -o ./concepts/challenge/exercise_4/bundle.js",
+		"ex5": "babel -w ./concepts/challenge/exercise_5/main.js -o ./concepts/challenge/exercise_5/bundle.js",
+		"ex6to7": "babel -w ./concepts/challenge/exercise_6-7/main.js -o ./concepts/challenge/exercise_6-7/bundle.js"
+	}
+}
