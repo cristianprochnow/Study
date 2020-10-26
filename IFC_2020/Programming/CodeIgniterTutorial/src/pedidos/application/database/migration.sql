@@ -1,0 +1,47 @@
+CREATE DATABASE pedidos;
+USE pedidos;
+
+CREATE TABLE IF NOT EXISTS `pedidos`.`mesa` (
+	`idMesa` INT(11) NOT NULL AUTO_INCREMENT,
+	`descricao` VARCHAR(45) NULL DEFAULT NULL,
+	`qtdPessoas` INT(11) NULL DEFAULT NULL,
+	`disponivel` ENUM("Sim", "Não") NULL DEFAULT NULL,
+PRIMARY KEY (`idMesa`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE IF NOT EXISTS `pedidos`.`cliente` (
+	`idCliente` INT(11) NOT NULL AUTO_INCREMENT,
+	`nome` VARCHAR(45) NULL DEFAULT NULL,
+	`telefone` VARCHAR(45) NULL DEFAULT NULL,
+	`email` VARCHAR(45) NULL DEFAULT NULL,
+PRIMARY KEY (`idCliente`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE IF NOT EXISTS `pedidos`.`pedido` (
+	`idPedido` INT(11) NOT NULL AUTO_INCREMENT,
+	`data` DATE NULL DEFAULT NULL,
+	`idMesa` INT(11) NOT NULL,
+	`idCliente` INT(11) NOT NULL,
+	`idCardapio` INT(11) NOT NULL,
+	`quantidade` INT(11) NULL DEFAULT NULL,
+PRIMARY KEY (`idPedido`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE IF NOT EXISTS `pedidos`.`cardapio` (
+	`idCardapio` INT(11) NOT NULL AUTO_INCREMENT,
+	`produto` VARCHAR(45) NULL DEFAULT NULL,
+	`valor` FLOAT(10,2) NULL DEFAULT NULL,
+	`idCategoria` INT(11) NOT NULL,
+PRIMARY KEY (`idCardapio`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE IF NOT EXISTS `pedidos`.`categoria` (
+	`idCategoria` INT(11) NOT NULL AUTO_INCREMENT,
+	`categoria` VARCHAR(45) NULL DEFAULT NULL,
+PRIMARY KEY (`idCategoria`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
