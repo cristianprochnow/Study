@@ -1,8 +1,8 @@
 Promise.resolve()
-  // .then(() => exercise_01())
+  // .then(() => exercise_01()
   // .then(() => exercise_02())
   // .then(() => exercise_03())
-  .then(() => exercise_04())
+  .then(exercise_04)
 
 function exercise_01() {
   const teams = []
@@ -103,7 +103,23 @@ function exercise_03() {
   }
 }
 
-function exercise_04() {}
+function exercise_04() {
+  const taxeIfValueSmallerThan20 = 0.30
+  const taxeIfValueBiggerThan20 = 0.45
+  let finalProductCost = 0
+
+  const productCost = Number(
+    prompt('💸 Quantos reais (R$) custará o produto?')
+  )
+
+  if (productCost < 20) {
+    finalProductCost = productCost * (taxeIfValueSmallerThan20 + 1)
+  } else {
+    finalProductCost = productCost * (taxeIfValueBiggerThan20 + 1)
+  }
+
+  alert(`O valor final do produto será de R$ ${finalProductCost} 💲!`)
+}
 
 function exercise_05() {}
 
