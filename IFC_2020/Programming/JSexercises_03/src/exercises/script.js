@@ -1,7 +1,8 @@
 Promise.resolve()
   // .then(() => exercise_01())
   // .then(() => exercise_02())
-  .then(() => exercise_03())
+  // .then(() => exercise_03())
+  .then(() => exercise_04())
 
 function exercise_01() {
   const teams = []
@@ -70,7 +71,37 @@ function exercise_02() {
   }
 }
 
-function exercise_03() {}
+function exercise_03() {
+  const months = [
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro'
+  ]
+
+  const monthIndexInsertedByUser = Number(
+    prompt('📆 Escolha um número de 1 a 12:')
+  )
+
+  for (let monthIndex in months) {
+    let isTheRightMonth = (Number(monthIndex) + 1) === monthIndexInsertedByUser
+
+    if (isTheRightMonth) {
+      console.log(months[monthIndex])
+      alert(`O número que você inseriu corresponde ao mês de ${months[monthIndex]}!`)
+
+      break
+    }
+  }
+}
 
 function exercise_04() {}
 
