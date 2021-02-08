@@ -4,8 +4,8 @@ Promise.resolve()
   // .then(exercise_03)
   // .then(exercise_04)
   // .then(exercise_05)
-  .then(exercise_06)
-  // .then(exercise_07)
+  // .then(exercise_06)
+  .then(exercise_07)
   // .then(exercise_08)
   // .then(exercise_09)
 
@@ -201,7 +201,43 @@ function exercise_06() {
   alert(`Com uma taxa de aumento de ${taxeForWorkerSalary * 100}%, seu salário final será de R$ ${Math.round(finalSalaryWithIncrements)}.`)
 }
 
-function exercise_07() {}
+function exercise_07() {
+  const digitOptionForCalculating = Number(
+    prompt('Digite um número de 0 a 4:')
+  )
+  const firstNumber = Number(
+    prompt('Digite o primeiro número:')
+  )
+  const secondNumber = Number(
+    prompt('Digite o segundo número:')
+  )
+
+  let result
+
+  switch (digitOptionForCalculating) {
+    case 0:
+      result = firstNumber + secondNumber
+      break;
+    case 1:
+      result = firstNumber - secondNumber
+      break;
+    case 2:
+      result = firstNumber * secondNumber
+      break;
+    case 3:
+      result = firstNumber / secondNumber
+      break;
+    case 4:
+      result = (firstNumber + secondNumber) / 2
+      break;
+    default:
+      result = 'Valor errado. Programa encerrado sem cálculo.'
+      break;
+  }
+
+  alert(`O resultado de sua conta foi:`)
+  alert(result)
+}
 
 function exercise_08() {}
 
