@@ -5,8 +5,8 @@ Promise.resolve()
   // .then(exercise_04)
   // .then(exercise_05)
   // .then(exercise_06)
-  .then(exercise_07)
-  // .then(exercise_08)
+  // .then(exercise_07)
+  .then(exercise_08)
   // .then(exercise_09)
 
 function exercise_01() {
@@ -239,6 +239,64 @@ function exercise_07() {
   alert(result)
 }
 
-function exercise_08() {}
+function exercise_08() {
+  const firstNumber = Number(
+    prompt('Digite o primeiro número:')
+  )
+  const secondNumber = Number(
+    prompt('Digite o segundo número:')
+  )
+
+  const restOfDivision = firstNumber % secondNumber
+
+  let result = 0
+
+  switch (restOfDivision) {
+    case 1:
+      result = firstNumber + secondNumber
+      alert(`A soma dos dois números é ${result}`)
+
+      bonusMessage = `Resto da divisão: ${restOfDivision}`
+      alert(bonusMessage)
+
+      break;
+    case 2:
+      function isEven(number) {
+        const isEven = number % 2 === 0
+
+        return isEven
+      }
+
+      alert(`O primeiro número é ${isEven(firstNumber) ? 'par' : 'ímpar'}.`)
+      alert(`O segundo número é ${isEven(secondNumber) ? 'par' : 'ímpar'}.`)
+
+      break;
+    case 3:
+      result = (firstNumber + secondNumber) * firstNumber
+
+      alert(`O resultado da operação é igual a ${result}`)
+
+      break;
+    case 4:
+      if (secondNumber !== 0) {
+        result = (firstNumber + secondNumber) / secondNumber
+
+        alert(`O resultado da operação é ${result}.`)
+      } else {
+        result = firstNumber ** 2
+        alert(`O quadrado do primeiro número é ${firstNumber}.`)
+
+        result = secondNumber ** 2
+        alert(`O quadrado do segundo número é ${secondNumber}.`)
+      }
+
+      break;
+
+    default:
+      alert('Valor inválido. Parabéns! 👏🏼')
+
+      break;
+  }
+}
 
 function exercise_09() {}
