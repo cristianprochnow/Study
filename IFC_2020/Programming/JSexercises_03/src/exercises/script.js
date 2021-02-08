@@ -3,8 +3,8 @@ Promise.resolve()
   // .then(exercise_02)
   // .then(exercise_03)
   // .then(exercise_04)
-  .then(exercise_05) // TODO: fix switch/case
-  // .then(exercise_06)
+  // .then(exercise_05)
+  .then(exercise_06)
   // .then(exercise_07)
   // .then(exercise_08)
   // .then(exercise_09)
@@ -164,7 +164,42 @@ function exercise_05() {
   alert(`Você foi ${data.schoolSituation}!`)
 }
 
-function exercise_06() {}
+function exercise_06() {
+  const taxesToIncreaseIntoRendiment = [
+    0.15,
+    0.12,
+    0.10,
+    0.07,
+    0.04
+  ]
+  let finalSalaryWithIncrements = 0, taxeForWorkerSalary = 0
+
+  const workSalary = Number(
+    prompt('Quantos reais (R$) você ganha por mês? (substitua vírgula por ponto)')
+  )
+
+  if (workSalary <= 400) {
+    finalSalaryWithIncrements = workSalary * (taxesToIncreaseIntoRendiment[0] + 1)
+    taxeForWorkerSalary = taxesToIncreaseIntoRendiment[0]
+  } else if (workSalary < 400 && workSalary <= 700) {
+    finalSalaryWithIncrements = workSalary * (taxesToIncreaseIntoRendiment[1] + 1)
+    taxeForWorkerSalary = taxesToIncreaseIntoRendiment[1]
+  } else if (workSalary < 700 && workSalary <= 1000) {
+    finalSalaryWithIncrements = workSalary * (taxesToIncreaseIntoRendiment[2] + 1)
+    taxeForWorkerSalary = taxesToIncreaseIntoRendiment[2]
+  } else if (workSalary < 1000 && workSalary <= 1500) {
+    finalSalaryWithIncrements = workSalary * (taxesToIncreaseIntoRendiment[3] + 1)
+    taxeForWorkerSalary = taxesToIncreaseIntoRendiment[3]
+  } else if (workSalary < 1500 && workSalary <= 2000) {
+    finalSalaryWithIncrements = workSalary * (taxesToIncreaseIntoRendiment[4] + 1)
+    taxeForWorkerSalary = taxesToIncreaseIntoRendiment[4]
+  } else {
+    finalSalaryWithIncrements = 'N/D'
+    taxeForWorkerSalary = 'N/D'
+  }
+
+  alert(`Com uma taxa de aumento de ${taxeForWorkerSalary * 100}%, seu salário final será de R$ ${Math.round(finalSalaryWithIncrements)}.`)
+}
 
 function exercise_07() {}
 
