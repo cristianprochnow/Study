@@ -1,8 +1,13 @@
 Promise.resolve()
-  // .then(() => exercise_01()
-  // .then(() => exercise_02())
-  // .then(() => exercise_03())
-  .then(exercise_04)
+  // .then(exercise_01)
+  // .then(exercise_02)
+  // .then(exercise_03)
+  // .then(exercise_04)
+  .then(exercise_05) // TODO: fix switch/case
+  // .then(exercise_06)
+  // .then(exercise_07)
+  // .then(exercise_08)
+  // .then(exercise_09)
 
 function exercise_01() {
   const teams = []
@@ -121,7 +126,43 @@ function exercise_04() {
   alert(`O valor final do produto será de R$ ${finalProductCost} 💲!`)
 }
 
-function exercise_05() {}
+function exercise_05() {
+  const firstGrade = Number(prompt('🎓 Digite a primeira nota (substitua vírgulas por pontos):'))
+  const secondGrade = Number(prompt('🎓 Digite a segunda nota (substitua vírgulas por pontos):'))
+  const averageScoreFromGrades = ((firstGrade + secondGrade) / 2)
+  let concept = '', isApproved = false
+
+  if (averageScoreFromGrades < 4) {
+    concept = 'E'
+    isApproved = false
+  } else if (averageScoreFromGrades >= 4 && averageScoreFromGrades <= 6) {
+    concept = 'D'
+    isApproved = false
+  } else if (averageScoreFromGrades >= 6 && averageScoreFromGrades <= 7.5) {
+    concept = 'C'
+    isApproved = false
+  } else if (averageScoreFromGrades >= 7.5 && averageScoreFromGrades <= 9) {
+    concept = 'B'
+    isApproved = true
+  } else {
+    concept = 'A'
+    isApproved = true
+  }
+
+  const data = {
+    firstGrade,
+    secondGrade,
+    averageGrade: averageScoreFromGrades,
+    concept,
+    schoolSituation: isApproved ? 'APROVADO' : 'REPROVADO'
+  }
+
+  alert(`Primeira nota: ${data.firstGrade}`)
+  alert(`Segunda nota: ${data.secondGrade}`)
+  alert(`Média final: ${data.averageGrade}`)
+  alert(`Conceito que você se encaixa: ${data.concept}`)
+  alert(`Você foi ${data.schoolSituation}!`)
+}
 
 function exercise_06() {}
 
