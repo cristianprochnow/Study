@@ -6,8 +6,8 @@ Promise.resolve()
   // .then(exercise_05)
   // .then(exercise_06)
   // .then(exercise_07)
-  .then(exercise_08)
-  // .then(exercise_09)
+  // .then(exercise_08)
+  .then(exercise_09)
 
 function exercise_01() {
   const teams = []
@@ -299,4 +299,46 @@ function exercise_08() {
   }
 }
 
-function exercise_09() {}
+function exercise_09() {
+  const firstManAge = Number(
+    prompt('Digite a idade do primeiro homem:')
+  )
+  const secondManAge = Number(
+    prompt('Digite a idade do segundo homem:')
+  )
+  const firstWomanAge = Number(
+    prompt('Digite a idade da primeira mulher:')
+  )
+  const secondWomanAge = Number(
+    prompt('Digite a idade da segunda mulher:')
+  )
+
+  let olderMan,
+    newerMan,
+    olderWoman,
+    newerWoman,
+    sumResult,
+    multiplicationResult
+
+  if (firstManAge > secondManAge) {
+    olderMan = firstManAge
+    newerMan = secondManAge
+  } else {
+    olderMan = secondManAge
+    newerMan = firstManAge
+  }
+
+  if (firstWomanAge > secondWomanAge) {
+    olderWoman = firstWomanAge
+    newerWoman = secondWomanAge
+  } else {
+    olderWoman = secondWomanAge
+    newerWoman = firstWomanAge
+  }
+
+  sumResult = olderMan + newerWoman
+  multiplicationResult = newerMan * olderWoman
+
+  alert(`Soma das idades do homem mais velho com a mulher mais nova: ${sumResult}`)
+  alert(`Produto das idades do homem mais novo com a mulher mais velha: ${multiplicationResult}`)
+}
