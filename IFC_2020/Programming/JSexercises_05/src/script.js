@@ -1,11 +1,12 @@
 const testNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 Promise.resolve()
-  // .then(() => exercise01(testNumbers))
-  // .then(() => exercise02(testNumbers))
-  // .then(exercise03)
-  // .then(() => exercise04(testNumbers))
+  .then(() => exercise01(testNumbers))
+  .then(() => exercise02(testNumbers))
+  .then(exercise03)
+  .then(() => exercise04(testNumbers))
   .then(() => exercise05(testNumbers))
+  .then(() => exercise06(25))
 
 function separateSections(exerciseNumber) {
   console.warn(`Exercise #${exerciseNumber}`)
@@ -92,4 +93,8 @@ function exercise05(numbers) {
   console.table({
     negativeNumbersAmount
   })
+}
+
+function exercise06(availableInk, clickAmount) {
+  let inkAmountUsed
 }
