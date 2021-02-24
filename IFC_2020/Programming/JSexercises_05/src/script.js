@@ -3,7 +3,8 @@ const testNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
 Promise.resolve()
   // .then(() => exercise01(testNumbers))
   // .then(() => exercise02(testNumbers))
-  .then(exercise03)
+  // .then(exercise03)
+  .then(() => exercise04(testNumbers))
 
 function separateSections(exerciseNumber) {
   console.warn(`Exercise #${exerciseNumber}`)
@@ -62,5 +63,18 @@ function exercise03() {
   console.table({
     oddNumbersSum: oddSum,
     evenNumbersSum: evenSum
+  })
+}
+
+function exercise04(numbers) {
+  let ageSum = 0,
+    ageAmount = 20
+
+  numbers.map(number => {
+    ageSum += number
+  })
+
+  console.table({
+    ageAverage: ageSum / ageAmount
   })
 }
