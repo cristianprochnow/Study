@@ -4,7 +4,8 @@ Promise.resolve()
   // .then(() => exercise01(testNumbers))
   // .then(() => exercise02(testNumbers))
   // .then(exercise03)
-  .then(() => exercise04(testNumbers))
+  // .then(() => exercise04(testNumbers))
+  .then(() => exercise05(testNumbers))
 
 function separateSections(exerciseNumber) {
   console.warn(`Exercise #${exerciseNumber}`)
@@ -76,5 +77,19 @@ function exercise04(numbers) {
 
   console.table({
     ageAverage: ageSum / ageAmount
+  })
+}
+
+function exercise05(numbers) {
+  let negativeNumbersAmount = 0
+
+  numbers.map(number => {
+    if (number < 0) {
+      negativeNumbersAmount++
+    }
+  })
+
+  console.table({
+    negativeNumbersAmount
   })
 }
