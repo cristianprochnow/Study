@@ -10,10 +10,29 @@ Promise.resolve()
   .then(exercise07)
   .then(exercise08)
   .then(exercise09)
+  .then(exercise10)
+  .then(exercise11)
+  .then(exercise12)
   .then(exercise13)
+  .then(exercise14)
+  .then(exercise15)
+  .then(exercise16)
+  .then(exercise17)
 
 function separateSections(exerciseNumber) {
   console.warn(`Exercise #${exerciseNumber}`)
+}
+
+function numberFactorial(number) {
+  let factorialResult = number
+
+  if (number === 0 || number === 1) return 1
+
+  for (let counter = number - 1; counter >= 1; counter--) {
+    factorialResult *= counter
+  }
+
+  return factorialResult
 }
 
 function exercise01(numbers) {
@@ -130,6 +149,8 @@ function exercise06() {
 }
 
 function exercise07() {
+  separateSections(7)
+
   let smallestHeight = 0,
     highestHeight = 0,
     sumHeight = 0,
@@ -176,6 +197,8 @@ function exercise07() {
 }
 
 function exercise08() {
+  separateSections(8)
+
   let nome,
     idade,
     i,
@@ -312,4 +335,87 @@ function exercise13() {
 
   alert(`Resultado do cálculo: ${calcResult}`)
   alert(`Cálculo: [${calculations.join(' + ')}]`)
+}
+
+function exercise14() {
+  separateSections(14)
+
+  // S is the abbreviation of Serie, a variable from calc formula
+  let S = 0,
+    calcOperation = 0,
+    maxValue = 51,
+    isPlusOperation = true
+
+  for (let counter = 1; counter <= maxValue; counter += 2) {
+    calcOperation = (1 / (counter ** 3))
+
+    if (isPlusOperation) {
+      S += calcOperation
+      isPlusOperation = false
+    } else {
+      S -= calcOperation
+      isPlusOperation = true
+    }
+  }
+
+  const pi = Math.cbrt(S * 32)
+
+  alert(`O valor de π é igual a ${pi}.`)
+}
+
+function exercise15() {
+  separateSections(15)
+
+  let calcResult = 0,
+    secondCounter = 0
+
+  const limitNumber = Number(prompt('Defina um valor numérico positivo para N:'))
+
+  secondCounter = limitNumber
+
+  for (let counter = limitNumber; counter >= 2; counter--) {
+    if (counter === limitNumber) calcResult = limitNumber
+    secondCounter--
+    calcResult *= secondCounter
+  }
+
+  alert(`Resultado do cálculo: ${calcResult}`)
+}
+
+function exercise16() {
+  separateSections(16)
+
+  const calculations = []
+  let calcResult = 0,
+    secondCounter = 0,
+    divisor = 20,
+    dividend = 100
+
+  for (let counter = divisor; counter >= 1; counter--) {
+    calcResult += counter / numberFactorial(secondCounter)
+
+    calculations.push(`${dividend}/${secondCounter}!`)
+
+    dividend--
+    secondCounter++
+  }
+
+  alert(`Resultado do cálculo: ${calcResult}`)
+  alert(`Cálculo: [${calculations.join(' + ')}]`)
+}
+
+function exercise17() {
+  separateSections(17)
+
+  let maxRange = 30,
+    xWithExponentZero = 1,
+    calcResultForE = xWithExponentZero
+
+  const xValue = Number(prompt('Qual o valor de X?'))
+
+  for (let counter = 1; counter <= maxRange; counter++) {
+    calcResultForE += ((xValue ** counter) / numberFactorial(counter))
+  }
+
+  alert(`O valor de [e^x] é igual a ${calcResultForE}!`)
 }
