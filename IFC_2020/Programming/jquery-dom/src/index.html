@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Manipulating DOM with jQuery</title>
+</head>
+<body>
+  <!-- #1 -->
+  <div id="tours-wrapper">
+    <h1>Viagens Guiadas</h1>
+    <ul id="viagens">
+      <li class="america">
+        <h2>New York, New York</h2>
+        <span class="details">$1,899 por 7 noites</span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="europe">
+        <h2>Paris, France</h2>
+        <span class="details">$2,499 por 7 noites</span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="europe sale">
+        <h2>Madrid, Spain</h2>
+        <span class="details">$1,577 por 5 noites</span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="asia">
+        <h2>Tokyo, Japan</h2>
+        <span class="details">$1,999 por 5 noites </span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="sorting">
+      <li><a href="#">America</a></li>
+      <li><a href="#">Europe</a></li>
+      <li><a href="#">Asia</a></li>
+    </ul>
+  </div>
+
+  <!-- #6 -->
+  <div id="vacations-wrapper">
+    <h1>Pacotes de Férias</h1>
+    <ul id="ferias">
+      <li class="ferias america">
+        <h2>San Francisco, California</h2>
+        <span class="details">$700</span>
+      </li>
+      <li class="ferias america">
+        <h2>Washington DC, District of Columbia</h2>
+        <span class="details">$400</span>
+      </li>
+      <li class="ferias europe">
+        <h2>London, England</h2>
+        <span class="details">$1,100</span>
+      </li>
+      <li class="ferias asia">
+        <h2>Shanghai, China</h2>
+        <span class="details">$1,200</span>
+      </li>
+    </ul>
+    <ul class="sorting">
+      <li><a href="#">America</a></li>
+      <li><a href="#">Europe</a></li>
+      <li><a href="#">Asia</a></li>
+    </ul>
+  </div>
+
+  <!-- #9 -->
+  <div id="tours-wrapper">
+    <h1>Passeios Guiados</h1>
+    <ul id="passeios">
+      <li class="usa">
+        <h2>New York, New York</h2>
+        <span class="details">$1,899 por 7 noites</span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="europe">
+        <h2>Paris, France</h2>
+        <span class="details">$2,499 por 7 noites</span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="europe sale">
+        <h2 class="destaque">Madrid, Spain</h2>
+        <span class="details">$1,577 por 5 noites</span>
+      </li>
+      <li class="asia">
+        <h2>Tokyo, Japan</h2>
+        <span class="details">$1,999 por 5 noites</span>
+        <ul class="vote">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="sorting">
+      <li><a href="#">America</a></li>
+      <li><a href="#">Europe</a></li>
+      <li><a href="#">Asia</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function separateFunctions(exerciseNumber) {
+      console.warn(`Exercise #${exerciseNumber}`)
+    }
+
+    jQuery(document).ready(() => {
+      // #1
+      separateFunctions(1)
+      const listItems = $('#viagens li').map((_, item) => console.log(item))
+
+      // #2
+      separateFunctions(2)
+      $('#viagens > li').map((_, item) => console.log(item))
+
+      // #3
+      separateFunctions(3)
+      $('.asia, .sale').map((_, item) => console.log(item))
+
+      // #4
+      separateFunctions(4)
+      $('#viagens > li:first').map((_, item) => console.log(item))
+
+      // #5
+      separateFunctions(5)
+      $('#tours-wrapper li li:even').map((_, item) => console.log(item))
+
+      // #6
+      separateFunctions(6)
+      $('#ferias')
+        .find('.america')
+        .map((_, item) => console.log(item))
+
+      // #7
+      separateFunctions(7)
+      $('#ferias li:first').map((_, item) => console.log(item))
+
+      // #8
+      separateFunctions(8)
+      $('#ferias li')
+        .last()
+        .prev()
+        .map((_, item) => console.log(item))
+
+      // #9
+      separateFunctions(9)
+      $('#passeios')
+        .find('.destaque')
+        .parent()
+        .map((_, item) => console.log(item))
+
+      // #10
+      separateFunctions(10)
+      $('#viagens')
+        .children()
+        .map((_, item) => console.log(item))
+    })
+  </script>
+</body>
+</html>
